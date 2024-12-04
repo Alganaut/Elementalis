@@ -1,5 +1,6 @@
 package com.Alganaut.Elementalis;
 
+import com.Alganaut.Elementalis.block.ModBlocks;
 import com.Alganaut.Elementalis.item.Moditems;
 import org.slf4j.Logger;
 
@@ -39,6 +40,7 @@ public class Elementalis {
         NeoForge.EVENT_BUS.register(this);
 
         Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -55,6 +57,12 @@ public class Elementalis {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Moditems.BLIGHT_ROD);
             event.accept(Moditems.BLIGHT_POWDER);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.TOMBSTONE);
+            event.accept(ModBlocks.POLISHED_TOMBSTONE);
+            event.accept(ModBlocks.TOMBSTONE_BRICKS);
         }
     }
 
