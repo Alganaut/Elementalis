@@ -2,8 +2,14 @@
 
   "item.elementalis.blight_rod": "Blight Rod",
   "item.elementalis.blight_powder": "Blight Powder",
+  "item.elementalis.undead_charge": "Undead Charge",
 
   "block.elementalis.tombstone": "Tombstone",
   "block.elementalis.polished_tombstone": "Polished Tombstone",
-  "block.elementalis.tombstone_bricks": "Tombstone Bricks"
+  "block.elementalis.tombstone_bricks": "Tombstone Bricks",
+  "block.elementalis.blooming_tombstone_bricks": "Blooming Tombstone Bricks",
+  "block.elementalis.chiseled_tombstone_bricks": "Chiseled Tombstone Bricks",
+  "block.elementalis.cracked_tombstone_bricks": "Cracked Tombstone Bricks",
+
+"creativetab.elementalis.elementalis": "Elementalis"
 }

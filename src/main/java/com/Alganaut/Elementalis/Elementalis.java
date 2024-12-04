@@ -1,6 +1,7 @@
 package com.Alganaut.Elementalis;
 
 import com.Alganaut.Elementalis.block.ModBlocks;
+import com.Alganaut.Elementalis.item.ModCreativeModeTabs;
 import com.Alganaut.Elementalis.item.Moditems;
 import org.slf4j.Logger;
 
@@ -32,8 +33,7 @@ public class Elementalis {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-
-
+        ModCreativeModeTabs.register(modEventBus);
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
@@ -57,12 +57,16 @@ public class Elementalis {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Moditems.BLIGHT_ROD);
             event.accept(Moditems.BLIGHT_POWDER);
+            event.accept(Moditems.UNDEAD_CHARGE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TOMBSTONE);
             event.accept(ModBlocks.POLISHED_TOMBSTONE);
             event.accept(ModBlocks.TOMBSTONE_BRICKS);
+            event.accept(ModBlocks.BLOOMING_TOMBSTONE_BRICKS);
+            event.accept(ModBlocks.CHISELED_TOMBSTONE_BRICKS);
+            event.accept(ModBlocks.CRACKED_TOMBSTONE_BRICKS);
         }
     }
 

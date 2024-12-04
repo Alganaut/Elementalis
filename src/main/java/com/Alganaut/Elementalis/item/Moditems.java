@@ -13,6 +13,8 @@ public class Moditems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BLIGHT_POWDER = ITEMS.register("blight_powder",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> UNDEAD_CHARGE = ITEMS.register("undead_charge",
+            () -> new Item(new Item.Properties()));
 
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);
