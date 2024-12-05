@@ -3,6 +3,7 @@ package com.Alganaut.Elementalis;
 import com.Alganaut.Elementalis.block.ModBlocks;
 import com.Alganaut.Elementalis.item.ModCreativeModeTabs;
 import com.Alganaut.Elementalis.item.Moditems;
+import com.Alganaut.Elementalis.sound.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -20,6 +21,8 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+
+import static net.minecraft.data.models.model.ModelTemplates.MUSIC_DISC;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(Elementalis.MODID)
@@ -45,6 +48,8 @@ public class Elementalis {
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
+        ModSounds.register(modEventBus);
+
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -58,6 +63,8 @@ public class Elementalis {
             event.accept(Moditems.BLIGHT_ROD);
             event.accept(Moditems.BLIGHT_POWDER);
             event.accept(Moditems.UNDEAD_CHARGE);
+            event.accept(Moditems.SIX_MUSIC_DISC);
+
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

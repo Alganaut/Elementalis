@@ -19,9 +19,12 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
         () -> CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.BLIGHT_POWDER.get()))
                 .title(Component.translatable("creativetab.elementalis.elementalis"))
                 .displayItems((itemDisplayParameters, output) -> {
+                    output.accept(Moditems.SIX_MUSIC_DISC);
+
                     output.accept(Moditems.BLIGHT_ROD);
                     output.accept(Moditems.BLIGHT_POWDER);
                     output.accept(Moditems.UNDEAD_CHARGE);
+
                     output.accept(ModBlocks.TOMBSTONE);
                     output.accept(ModBlocks.POLISHED_TOMBSTONE);
                     output.accept(ModBlocks.TOMBSTONE_BRICKS);
