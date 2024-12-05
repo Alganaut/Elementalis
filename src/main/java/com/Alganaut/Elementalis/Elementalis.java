@@ -67,6 +67,7 @@ public class Elementalis {
             event.accept(ModBlocks.BLOOMING_TOMBSTONE_BRICKS);
             event.accept(ModBlocks.CHISELED_TOMBSTONE_BRICKS);
             event.accept(ModBlocks.CRACKED_TOMBSTONE_BRICKS);
+            event.accept(ModBlocks.TOMBSTONE_PILLAR);
         }
     }
 

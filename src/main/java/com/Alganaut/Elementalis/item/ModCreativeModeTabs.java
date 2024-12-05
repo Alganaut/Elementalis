@@ -28,6 +28,7 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
                     output.accept(ModBlocks.CRACKED_TOMBSTONE_BRICKS);
                     output.accept(ModBlocks.CHISELED_TOMBSTONE_BRICKS);
                     output.accept(ModBlocks.BLOOMING_TOMBSTONE_BRICKS);
+                    output.accept(ModBlocks.TOMBSTONE_PILLAR);
                 }).build());
 
 public static void register(IEventBus eventBus) {
