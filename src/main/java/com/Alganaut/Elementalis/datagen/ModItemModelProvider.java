@@ -17,5 +17,6 @@ basicItem(Moditems.SIX_MUSIC_DISC.get());
 basicItem(Moditems.BLIGHT_ROD.get());
 basicItem(Moditems.BLIGHT_POWDER.get());
 basicItem(Moditems.UNDEAD_CHARGE.get());
+basicItem(Moditems.PERISH_SMITHING_TEMPLATE.get());
     }
 }

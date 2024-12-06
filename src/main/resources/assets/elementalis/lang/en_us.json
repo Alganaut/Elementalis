@@ -4,6 +4,8 @@
   "item.elementalis.blight_powder": "Blight Powder",
   "item.elementalis.undead_charge": "Undead Charge",
 
+  "item.elementalis.perish_armor_trim_smithing_template": "Smithing Template",
+
   "item.elementalis.6_music_disc": "Music Disc",
   "item.elementalis.6_music_disc.desc": "Alganaut - 6'",
 
@@ -15,5 +17,7 @@
   "block.elementalis.cracked_tombstone_bricks": "Cracked Tombstone Bricks",
   "block.elementalis.tombstone_pillar": "Tombstone Pillar",
 
-"creativetab.elementalis.elementalis": "Elementalis"
+"creativetab.elementalis.elementalis": "Elementalis",
+
+  "trim_pattern.elementalis.perish": "Perish Armor Trim"
 }

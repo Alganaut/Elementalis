@@ -1,10 +1,12 @@
 package com.Alganaut.Elementalis.datagen;
 
+import com.Alganaut.Elementalis.Elementalis;
 import com.Alganaut.Elementalis.block.ModBlocks;
 import com.Alganaut.Elementalis.item.Moditems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
@@ -41,6 +43,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', Moditems.BLIGHT_POWDER)
                 .define('R', Items.ROTTEN_FLESH)
                 .unlockedBy("has_blight_powder", has(Moditems.BLIGHT_POWDER)).save(recipeOutput);
+
+        trimSmithing(recipeOutput, Moditems.PERISH_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(Elementalis.MODID, "perish"));
 
     }
 }

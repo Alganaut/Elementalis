@@ -25,6 +25,8 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
                     output.accept(Moditems.BLIGHT_POWDER);
                     output.accept(Moditems.UNDEAD_CHARGE);
 
+                    output.accept(Moditems.PERISH_SMITHING_TEMPLATE);
+
                     output.accept(ModBlocks.TOMBSTONE);
                     output.accept(ModBlocks.POLISHED_TOMBSTONE);
                     output.accept(ModBlocks.TOMBSTONE_BRICKS);

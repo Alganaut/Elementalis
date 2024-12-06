@@ -63,8 +63,12 @@ public class Elementalis {
             event.accept(Moditems.BLIGHT_ROD);
             event.accept(Moditems.BLIGHT_POWDER);
             event.accept(Moditems.UNDEAD_CHARGE);
-            event.accept(Moditems.SIX_MUSIC_DISC);
+            event.accept(Moditems.PERISH_SMITHING_TEMPLATE);
 
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(Moditems.SIX_MUSIC_DISC);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
