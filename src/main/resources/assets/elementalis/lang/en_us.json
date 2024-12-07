@@ -10,12 +10,24 @@
   "item.elementalis.6_music_disc.desc": "Alganaut - 6'",
 
   "block.elementalis.tombstone": "Tombstone",
+  "block.elementalis.tombstone_stairs": "Tombstone Stairs",
+  "block.elementalis.tombstone_slab": "Tombstone Slab",
+  "block.elementalis.tombstone_wall": "Tombstone Wall",
   "block.elementalis.polished_tombstone": "Polished Tombstone",
+  "block.elementalis.polished_tombstone_stairs": "Polished Tombstone Stairs",
+  "block.elementalis.polished_tombstone_slab": "Polished Tombstone Slab",
+  "block.elementalis.polished_tombstone_wall": "Polished Tombstone Wall",
   "block.elementalis.tombstone_bricks": "Tombstone Bricks",
+  "block.elementalis.tombstone_brick_stairs": "Tombstone Brick Stairs",
+  "block.elementalis.tombstone_brick_slab": "Tombstone Brick Slab",
+  "block.elementalis.tombstone_brick_wall": "Tombstone Brick Wall",
   "block.elementalis.blooming_tombstone_bricks": "Blooming Tombstone Bricks",
   "block.elementalis.chiseled_tombstone_bricks": "Chiseled Tombstone Bricks",
   "block.elementalis.cracked_tombstone_bricks": "Cracked Tombstone Bricks",
   "block.elementalis.tombstone_pillar": "Tombstone Pillar",
+
+  "block.elementalis.black_iron_door": "Black Iron Door",
+  "block.elementalis.black_iron_trapdoor": "Black Iron Trapdoor",
 
 "creativetab.elementalis.elementalis": "Elementalis",
 

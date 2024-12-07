@@ -29,5 +29,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_IRON_TOOL);
 
+        tag(BlockTags.WALLS).add(ModBlocks.TOMBSTONE_WALL.get());
+        tag(BlockTags.WALLS).add(ModBlocks.POLISHED_TOMBSTONE_WALL.get());
+        tag(BlockTags.WALLS).add(ModBlocks.TOMBSTONE_BRICK_WALL.get());
     }
 }

@@ -28,12 +28,28 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
                     output.accept(Moditems.PERISH_SMITHING_TEMPLATE);
 
                     output.accept(ModBlocks.TOMBSTONE);
+                    output.accept(ModBlocks.TOMBSTONE_STAIRS);
+                    output.accept(ModBlocks.TOMBSTONE_SLAB);
+                    output.accept(ModBlocks.TOMBSTONE_WALL);
+
                     output.accept(ModBlocks.POLISHED_TOMBSTONE);
+                    output.accept(ModBlocks.POLISHED_TOMBSTONE_STAIRS);
+                    output.accept(ModBlocks.POLISHED_TOMBSTONE_SLAB);
+                    output.accept(ModBlocks.POLISHED_TOMBSTONE_WALL);
+
                     output.accept(ModBlocks.TOMBSTONE_BRICKS);
+                    output.accept(ModBlocks.TOMBSTONE_BRICK_STAIRS);
+                    output.accept(ModBlocks.TOMBSTONE_BRICK_SLAB);
+                    output.accept(ModBlocks.TOMBSTONE_BRICK_WALL);
                     output.accept(ModBlocks.CRACKED_TOMBSTONE_BRICKS);
                     output.accept(ModBlocks.CHISELED_TOMBSTONE_BRICKS);
                     output.accept(ModBlocks.BLOOMING_TOMBSTONE_BRICKS);
+
                     output.accept(ModBlocks.TOMBSTONE_PILLAR);
+
+                    output.accept(ModBlocks.BLACK_IRON_DOOR);
+                    output.accept(ModBlocks.BLACK_IRON_TRAPDOOR);
+
                 }).build());
 
 public static void register(IEventBus eventBus) {
