@@ -32,6 +32,7 @@ blockWithItem(ModBlocks.TOMBSTONE);
         stairsBlock(ModBlocks.TOMBSTONE_STAIRS.get(), blockTexture(ModBlocks.TOMBSTONE.get()));
         stairsBlock(ModBlocks.POLISHED_TOMBSTONE_STAIRS.get(), blockTexture(ModBlocks.POLISHED_TOMBSTONE.get()));
         stairsBlock(ModBlocks.TOMBSTONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.TOMBSTONE_BRICKS.get()));
+        stairsBlock(ModBlocks.MOROSE_STAIRS.get(), blockTexture(ModBlocks.MOROSE_PLANKS.get()));
 
         slabBlock(ModBlocks.TOMBSTONE_SLAB.get(), blockTexture(ModBlocks.TOMBSTONE.get()), blockTexture(ModBlocks.TOMBSTONE.get()));
         slabBlock(ModBlocks.POLISHED_TOMBSTONE_SLAB.get(), blockTexture(ModBlocks.POLISHED_TOMBSTONE.get()), blockTexture(ModBlocks.POLISHED_TOMBSTONE.get()));
