@@ -1,4 +1,4 @@
-package com.Alganaut.Elementalis.sound;
+package com.Alganaut.Elementalis.registry.sound;
 
 import com.Alganaut.Elementalis.Elementalis;
 import net.minecraft.core.registries.BuiltInRegistries;

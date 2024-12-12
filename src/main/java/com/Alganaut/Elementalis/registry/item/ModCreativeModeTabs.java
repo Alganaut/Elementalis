@@ -1,7 +1,7 @@
-package com.Alganaut.Elementalis.item;
+package com.Alganaut.Elementalis.registry.item;
 
 import com.Alganaut.Elementalis.Elementalis;
-import com.Alganaut.Elementalis.block.ModBlocks;
+import com.Alganaut.Elementalis.registry.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -49,6 +49,19 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
 
                     output.accept(ModBlocks.BLACK_IRON_DOOR);
                     output.accept(ModBlocks.BLACK_IRON_TRAPDOOR);
+
+                    output.accept(ModBlocks.MOROSE_BUD);
+                    output.accept(ModBlocks.MOROSE_BRANCH);
+                    output.accept(ModBlocks.STRIPPED_MOROSE_BRANCH);
+                    output.accept(ModBlocks.MOROSE_WOOD);
+                    output.accept(ModBlocks.STRIPPED_MOROSE_WOOD);
+                    output.accept(ModBlocks.MOROSE_PLANKS);
+                    output.accept(ModBlocks.MOROSE_STAIRS);
+                    output.accept(ModBlocks.MOROSE_SLAB);
+                    output.accept(ModBlocks.MOROSE_DOOR);
+                    output.accept(ModBlocks.MOROSE_TRAPDOOR);
+                    output.accept(ModBlocks.MOROSE_LEAVES);
+                    output.accept(ModBlocks.BUDDING_MOROSE_LEAVES);
 
                 }).build());
 

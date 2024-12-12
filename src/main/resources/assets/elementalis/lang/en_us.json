@@ -29,6 +29,19 @@
   "block.elementalis.black_iron_door": "Black Iron Door",
   "block.elementalis.black_iron_trapdoor": "Black Iron Trapdoor",
 
+  "block.elementalis.morose_branch": "Morose Branch",
+  "block.elementalis.morose_wood": "Morose Wood",
+  "block.elementalis.stripped_morose_wood": "Stripped Morose Wood",
+  "block.elementalis.stripped_morose_branch": "Stripped Morose Branch",
+  "block.elementalis.morose_planks": "Morose Planks",
+  "block.elementalis.morose_bud": "Morose Bud",
+  "block.elementalis.morose_leaves": "Morose Leaves",
+  "block.elementalis.budding_morose_leaves": "Budding Morose Leaves",
+  "block.elementalis.morose_door": "Morose Door",
+  "block.elementalis.morose_trapdoor": "Morose Trapdoor",
+  "block.elementalis.morose_slab": "Morose Slab",
+  "block.elementalis.morose_stairs": "Morose Stairs",
+
 "creativetab.elementalis.elementalis": "Elementalis",
 
   "trim_pattern.elementalis.perish": "Perish Armor Trim"

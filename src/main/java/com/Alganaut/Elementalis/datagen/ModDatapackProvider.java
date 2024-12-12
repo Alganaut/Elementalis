@@ -1,7 +1,7 @@
 package com.Alganaut.Elementalis.datagen;
 
 import com.Alganaut.Elementalis.Elementalis;
-import com.Alganaut.Elementalis.trim.ModTrimPatterns;
+import com.Alganaut.Elementalis.registry.trim.ModTrimPatterns;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;

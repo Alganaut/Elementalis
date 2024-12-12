@@ -1,8 +1,8 @@
 package com.Alganaut.Elementalis.datagen;
 
 import com.Alganaut.Elementalis.Elementalis;
-import com.Alganaut.Elementalis.block.ModBlocks;
-import com.Alganaut.Elementalis.item.Moditems;
+import com.Alganaut.Elementalis.registry.block.ModBlocks;
+import com.Alganaut.Elementalis.registry.item.Moditems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -87,6 +87,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', Items.BLACK_DYE)
                 .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT)).save(recipeOutput);
 
+        stairBuilder(ModBlocks.MOROSE_STAIRS.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS)).group("morose_planks")
+                .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.MOROSE_DOOR.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS)).group("morose_planks")
+                .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS)).save(recipeOutput);
+
+        trapdoorBuilder(ModBlocks.MOROSE_TRAPDOOR.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS)).group("morose_planks")
+                .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS)).save(recipeOutput);
     }
 
 }

@@ -1,7 +1,7 @@
-package com.Alganaut.Elementalis.item;
+package com.Alganaut.Elementalis.registry.item;
 
 import com.Alganaut.Elementalis.Elementalis;
-import com.Alganaut.Elementalis.sound.ModSounds;
+import com.Alganaut.Elementalis.registry.sound.ModSounds;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SmithingTemplateItem;

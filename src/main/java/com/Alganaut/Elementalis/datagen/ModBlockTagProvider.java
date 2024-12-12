@@ -1,7 +1,7 @@
 package com.Alganaut.Elementalis.datagen;
 
 import com.Alganaut.Elementalis.Elementalis;
-import com.Alganaut.Elementalis.block.ModBlocks;
+import com.Alganaut.Elementalis.registry.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -32,5 +32,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WALLS).add(ModBlocks.TOMBSTONE_WALL.get());
         tag(BlockTags.WALLS).add(ModBlocks.POLISHED_TOMBSTONE_WALL.get());
         tag(BlockTags.WALLS).add(ModBlocks.TOMBSTONE_BRICK_WALL.get());
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.MOROSE_BRANCH.get())
+                .add(ModBlocks.STRIPPED_MOROSE_BRANCH.get())
+                .add(ModBlocks.MOROSE_WOOD.get())
+                .add(ModBlocks.STRIPPED_MOROSE_WOOD.get());
     }
 }

@@ -1,7 +1,7 @@
-package com.Alganaut.Elementalis.trim;
+package com.Alganaut.Elementalis.registry.trim;
 
 import com.Alganaut.Elementalis.Elementalis;
-import com.Alganaut.Elementalis.item.Moditems;
+import com.Alganaut.Elementalis.registry.item.Moditems;
 import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;

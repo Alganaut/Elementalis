@@ -1,9 +1,9 @@
 package com.Alganaut.Elementalis;
 
-import com.Alganaut.Elementalis.block.ModBlocks;
-import com.Alganaut.Elementalis.item.ModCreativeModeTabs;
-import com.Alganaut.Elementalis.item.Moditems;
-import com.Alganaut.Elementalis.sound.ModSounds;
+import com.Alganaut.Elementalis.registry.block.ModBlocks;
+import com.Alganaut.Elementalis.registry.item.ModCreativeModeTabs;
+import com.Alganaut.Elementalis.registry.item.Moditems;
+import com.Alganaut.Elementalis.registry.sound.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -21,8 +21,6 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-
-import static net.minecraft.data.models.model.ModelTemplates.MUSIC_DISC;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(Elementalis.MODID)
@@ -79,6 +77,12 @@ public class Elementalis {
             event.accept(ModBlocks.CHISELED_TOMBSTONE_BRICKS);
             event.accept(ModBlocks.CRACKED_TOMBSTONE_BRICKS);
             event.accept(ModBlocks.TOMBSTONE_PILLAR);
+            event.accept(ModBlocks.MOROSE_BRANCH);
+            event.accept(ModBlocks.STRIPPED_MOROSE_BRANCH);
+            event.accept(ModBlocks.MOROSE_WOOD);
+            event.accept(ModBlocks.STRIPPED_MOROSE_WOOD);
+            event.accept(ModBlocks.MOROSE_PLANKS);
+
         }
     }
 

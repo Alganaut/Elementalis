@@ -1,11 +1,12 @@
 package com.Alganaut.Elementalis.datagen;
 
 import com.Alganaut.Elementalis.Elementalis;
-import com.Alganaut.Elementalis.block.ModBlocks;
-import com.Alganaut.Elementalis.item.Moditems;
+import com.Alganaut.Elementalis.registry.block.ModBlocks;
+import com.Alganaut.Elementalis.registry.item.Moditems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -28,7 +29,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.TOMBSTONE_BRICK_WALL, ModBlocks.TOMBSTONE_BRICKS);
 
         basicItem(ModBlocks.BLACK_IRON_DOOR.asItem());
+        basicItem(ModBlocks.MOROSE_DOOR.asItem());
 
+        saplingItem(ModBlocks.MOROSE_BUD);
+    }
+
+    private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(Elementalis.MODID, "block/" + item.getId().getPath()));
     }
 
     public void wallItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
