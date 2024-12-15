@@ -95,6 +95,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         trapdoorBuilder(ModBlocks.MOROSE_TRAPDOOR.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS)).group("morose_planks")
                 .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOROSE_PLANKS.get(), 4)
+                .requires(ModBlocks.MOROSE_BRANCH)
+                .unlockedBy("has_morose_branch", has(ModBlocks.MOROSE_BRANCH)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOROSE_PLANKS.get(), 3)
+                .requires(ModBlocks.MOROSE_WOOD)
+                .unlockedBy("has_morose_branch", has(ModBlocks.MOROSE_BRANCH)).save(recipeOutput, "elementalis:morose_planks_2");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOROSE_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_MOROSE_BRANCH)
+                .unlockedBy("has_morose_branch", has(ModBlocks.MOROSE_BRANCH)).save(recipeOutput, "elementalis:morose_planks_3");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOROSE_PLANKS.get(), 3)
+                .requires(ModBlocks.STRIPPED_MOROSE_WOOD)
+                .unlockedBy("has_morose_branch", has(ModBlocks.MOROSE_BRANCH)).save(recipeOutput, "elementalis:morose_planks_4");
+
     }
 
 }
