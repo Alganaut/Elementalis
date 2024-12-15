@@ -6,16 +6,21 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.IntProvider;
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.util.valueproviders.WeightedListInt;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
@@ -30,15 +35,22 @@ public class ModConfiguredFeatures {
 
         register(context, MOROSE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.MOROSE_BRANCH.get()),
-                new ForkingTrunkPlacer(4, 4, 3),
-
-                BlockStateProvider.simple(ModBlocks.MOROSE_LEAVES.get()),
-                new BushFoliagePlacer(ConstantInt.of(2), ConstantInt.of(3), 3),
-
-                new TwoLayersFeatureSize(1, 0, 2)).build());
-
-
-
+                new CherryTrunkPlacer(
+                        0, 1, 2,
+                        new WeightedListInt(
+                                SimpleWeightedRandomList.<IntProvider>builder().add(ConstantInt.of(1), 3).add(ConstantInt.of(1), 1).add(ConstantInt.of(1), 2).build()
+                        ),
+                        UniformInt.of(2, 2),
+                        UniformInt.of(-3, -2),
+                        UniformInt.of(-1, 0)
+                ),
+                new WeightedStateProvider(
+                        SimpleWeightedRandomList.<BlockState>builder()
+                                .add(ModBlocks.MOROSE_LEAVES.get().defaultBlockState(), 2)
+                                .add(ModBlocks.BUDDING_MOROSE_LEAVES.get().defaultBlockState(), 1)
+                ),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(3, 1, 2)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
