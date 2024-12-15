@@ -36,9 +36,9 @@ public class ModConfiguredFeatures {
         register(context, MOROSE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.MOROSE_BRANCH.get()),
                 new CherryTrunkPlacer(
-                        0, 1, 2,
+                        0, 1, 0,
                         new WeightedListInt(
-                                SimpleWeightedRandomList.<IntProvider>builder().add(ConstantInt.of(1), 3).add(ConstantInt.of(1), 1).add(ConstantInt.of(1), 2).build()
+                                SimpleWeightedRandomList.<IntProvider>builder().add(ConstantInt.of(1), 1).add(ConstantInt.of(3), 2).add(ConstantInt.of(1), 2).build()
                         ),
                         UniformInt.of(2, 2),
                         UniformInt.of(-3, -2),
