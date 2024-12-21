@@ -1,9 +1,13 @@
 package com.Alganaut.Elementalis;
 
 import com.Alganaut.Elementalis.registry.block.ModBlocks;
+import com.Alganaut.Elementalis.registry.entity.ModEntities;
+import com.Alganaut.Elementalis.registry.entity.client.DirtmanRenderer;
 import com.Alganaut.Elementalis.registry.item.ModCreativeModeTabs;
-import com.Alganaut.Elementalis.registry.item.Moditems;
+import com.Alganaut.Elementalis.registry.item.ModItems;
 import com.Alganaut.Elementalis.registry.sound.ModSounds;
+import com.Alganaut.Elementalis.util.ModItemProperties;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -40,7 +44,7 @@ public class Elementalis {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        Moditems.register(modEventBus);
+        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
@@ -50,6 +54,8 @@ public class Elementalis {
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        ModEntities.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -58,15 +64,15 @@ public class Elementalis {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Moditems.BLIGHT_ROD);
-            event.accept(Moditems.BLIGHT_POWDER);
-            event.accept(Moditems.UNDEAD_CHARGE);
-            event.accept(Moditems.PERISH_SMITHING_TEMPLATE);
+            event.accept(ModItems.BLIGHT_ROD);
+            event.accept(ModItems.BLIGHT_POWDER);
+            event.accept(ModItems.UNDEAD_CHARGE);
+            event.accept(ModItems.PERISH_SMITHING_TEMPLATE);
 
         }
 
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(Moditems.SIX_MUSIC_DISC);
+            event.accept(ModItems.SIX_MUSIC_DISC);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -94,6 +100,9 @@ public class Elementalis {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ModItemProperties.addCustomItemProperties();
+
+            EntityRenderers.register(ModEntities.DIRTMAN.get(), DirtmanRenderer::new);
         }
     }
 }

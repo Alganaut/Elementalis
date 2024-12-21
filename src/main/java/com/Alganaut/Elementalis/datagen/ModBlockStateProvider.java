@@ -58,6 +58,7 @@ blockWithItem(ModBlocks.TOMBSTONE);
         blockItem(ModBlocks.POLISHED_TOMBSTONE_SLAB);
         blockItem(ModBlocks.TOMBSTONE_BRICK_SLAB);
         blockItem(ModBlocks.MOROSE_SLAB);
+        blockItem(ModBlocks.MOROSE_PRESSURE_PLATE);
 
         blockItem(ModBlocks.MOROSE_BRANCH);
         blockItem(ModBlocks.MOROSE_WOOD);
@@ -70,6 +71,8 @@ blockWithItem(ModBlocks.TOMBSTONE);
 
         blockItem(ModBlocks.BLACK_IRON_TRAPDOOR, "_bottom");
         blockItem(ModBlocks.MOROSE_TRAPDOOR, "_bottom");
+
+        pressurePlateBlock(ModBlocks.MOROSE_PRESSURE_PLATE.get(), blockTexture(ModBlocks.MOROSE_PLANKS.get()));
 
         logBlock(((RotatedPillarBlock) ModBlocks.MOROSE_BRANCH.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.MOROSE_WOOD.get()), blockTexture(ModBlocks.MOROSE_BRANCH.get()), blockTexture(ModBlocks.MOROSE_BRANCH.get()));

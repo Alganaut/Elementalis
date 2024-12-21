@@ -2,11 +2,10 @@ package com.Alganaut.Elementalis.datagen;
 
 import com.Alganaut.Elementalis.Elementalis;
 import com.Alganaut.Elementalis.registry.block.ModBlocks;
-import com.Alganaut.Elementalis.registry.item.Moditems;
+import com.Alganaut.Elementalis.registry.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -23,7 +22,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
 
         this.tag(ItemTags.TRIM_TEMPLATES)
-                .add(Moditems.PERISH_SMITHING_TEMPLATE.get());
+                .add(ModItems.PERISH_SMITHING_TEMPLATE.get());
 
         this.tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.MOROSE_BRANCH.get().asItem())

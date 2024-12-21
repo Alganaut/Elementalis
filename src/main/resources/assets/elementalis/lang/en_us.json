@@ -4,6 +4,8 @@
   "item.elementalis.blight_powder": "Blight Powder",
   "item.elementalis.undead_charge": "Undead Charge",
 
+  "item.elementalis.dirtman_spawn_egg": "Dirtman Spawn Egg",
+
   "item.elementalis.perish_armor_trim_smithing_template": "Smithing Template",
 
   "item.elementalis.6_music_disc": "Music Disc",
@@ -44,5 +46,7 @@
 
 "creativetab.elementalis.elementalis": "Elementalis",
 
-  "trim_pattern.elementalis.perish": "Perish Armor Trim"
+  "trim_pattern.elementalis.perish": "Perish Armor Trim",
+
+  "entity.mccourse.dirtman": "Dirtman"
 }

@@ -2,7 +2,7 @@ package com.Alganaut.Elementalis.datagen;
 
 import com.Alganaut.Elementalis.Elementalis;
 import com.Alganaut.Elementalis.registry.block.ModBlocks;
-import com.Alganaut.Elementalis.registry.item.Moditems;
+import com.Alganaut.Elementalis.registry.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -18,11 +18,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(Moditems.SIX_MUSIC_DISC.get());
-        basicItem(Moditems.BLIGHT_ROD.get());
-        basicItem(Moditems.BLIGHT_POWDER.get());
-        basicItem(Moditems.UNDEAD_CHARGE.get());
-        basicItem(Moditems.PERISH_SMITHING_TEMPLATE.get());
+        basicItem(ModItems.SIX_MUSIC_DISC.get());
+        basicItem(ModItems.BLIGHT_ROD.get());
+        basicItem(ModItems.BLIGHT_POWDER.get());
+        basicItem(ModItems.UNDEAD_CHARGE.get());
+        basicItem(ModItems.PERISH_SMITHING_TEMPLATE.get());
 
         wallItem(ModBlocks.TOMBSTONE_WALL, ModBlocks.TOMBSTONE);
         wallItem(ModBlocks.POLISHED_TOMBSTONE_WALL, ModBlocks.POLISHED_TOMBSTONE);
@@ -32,6 +32,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModBlocks.MOROSE_DOOR.asItem());
 
         saplingItem(ModBlocks.MOROSE_BUD);
+
+        withExistingParent(ModItems.DIRTMAN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {

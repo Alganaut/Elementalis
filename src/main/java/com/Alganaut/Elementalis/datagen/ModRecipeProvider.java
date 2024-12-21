@@ -2,7 +2,7 @@ package com.Alganaut.Elementalis.datagen;
 
 import com.Alganaut.Elementalis.Elementalis;
 import com.Alganaut.Elementalis.registry.block.ModBlocks;
-import com.Alganaut.Elementalis.registry.item.Moditems;
+import com.Alganaut.Elementalis.registry.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -33,28 +33,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('P', ModBlocks.POLISHED_TOMBSTONE.get())
                 .unlockedBy("has_tombstone", has(ModBlocks.TOMBSTONE)).save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Moditems.BLIGHT_POWDER.get(), 2)
-                .requires(Moditems.BLIGHT_ROD)
-                .unlockedBy("has_blight_rod", has(Moditems.BLIGHT_ROD)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLIGHT_POWDER.get(), 2)
+                .requires(ModItems.BLIGHT_ROD)
+                .unlockedBy("has_blight_rod", has(ModItems.BLIGHT_ROD)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Moditems.UNDEAD_CHARGE.get(), 1)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.UNDEAD_CHARGE.get(), 1)
                 .pattern(" B ")
                 .pattern("BRB")
                 .pattern(" B ")
-                .define('B', Moditems.BLIGHT_POWDER)
+                .define('B', ModItems.BLIGHT_POWDER)
                 .define('R', Items.ROTTEN_FLESH)
-                .unlockedBy("has_blight_rod", has(Moditems.BLIGHT_ROD)).save(recipeOutput);
+                .unlockedBy("has_blight_rod", has(ModItems.BLIGHT_ROD)).save(recipeOutput);
 
-        trimSmithing(recipeOutput, Moditems.PERISH_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(Elementalis.MODID, "perish"));
+        trimSmithing(recipeOutput, ModItems.PERISH_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(Elementalis.MODID, "perish"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Moditems.PERISH_SMITHING_TEMPLATE.get(), 2)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PERISH_SMITHING_TEMPLATE.get(), 2)
                 .pattern("DPD")
                 .pattern("DBD")
                 .pattern("DDD")
-                .define('B', Moditems.BLIGHT_ROD)
+                .define('B', ModItems.BLIGHT_ROD)
                 .define('D', Items.DIAMOND)
-                .define('P', Moditems.PERISH_SMITHING_TEMPLATE)
-                .unlockedBy("has_perish_smithing_template", has(Moditems.PERISH_SMITHING_TEMPLATE)).save(recipeOutput);
+                .define('P', ModItems.PERISH_SMITHING_TEMPLATE)
+                .unlockedBy("has_perish_smithing_template", has(ModItems.PERISH_SMITHING_TEMPLATE)).save(recipeOutput);
 
         stairBuilder(ModBlocks.TOMBSTONE_STAIRS.get(), Ingredient.of(ModBlocks.TOMBSTONE)).group("tombstone")
                 .unlockedBy("has_tombstone", has(ModBlocks.TOMBSTONE)).save(recipeOutput);
@@ -111,6 +111,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOROSE_PLANKS.get(), 3)
                 .requires(ModBlocks.STRIPPED_MOROSE_WOOD)
                 .unlockedBy("has_morose_branch", has(ModBlocks.MOROSE_BRANCH)).save(recipeOutput, "elementalis:morose_planks_4");
+
+        pressurePlate(recipeOutput, ModBlocks.MOROSE_PRESSURE_PLATE.get(), ModBlocks.MOROSE_PLANKS.get());
 
     }
 

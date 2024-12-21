@@ -16,16 +16,16 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Elementalis.MODID);
 
 public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TAB.register( "elementalis_tab",
-        () -> CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.BLIGHT_POWDER.get()))
+        () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BLIGHT_POWDER.get()))
                 .title(Component.translatable("creativetab.elementalis.elementalis"))
                 .displayItems((itemDisplayParameters, output) -> {
-                    output.accept(Moditems.SIX_MUSIC_DISC);
+                    output.accept(ModItems.SIX_MUSIC_DISC);
 
-                    output.accept(Moditems.BLIGHT_ROD);
-                    output.accept(Moditems.BLIGHT_POWDER);
-                    output.accept(Moditems.UNDEAD_CHARGE);
+                    output.accept(ModItems.BLIGHT_ROD);
+                    output.accept(ModItems.BLIGHT_POWDER);
+                    output.accept(ModItems.UNDEAD_CHARGE);
 
-                    output.accept(Moditems.PERISH_SMITHING_TEMPLATE);
+                    output.accept(ModItems.PERISH_SMITHING_TEMPLATE);
 
                     output.accept(ModBlocks.TOMBSTONE);
                     output.accept(ModBlocks.TOMBSTONE_STAIRS);
@@ -60,8 +60,11 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
                     output.accept(ModBlocks.MOROSE_SLAB);
                     output.accept(ModBlocks.MOROSE_DOOR);
                     output.accept(ModBlocks.MOROSE_TRAPDOOR);
+                    output.accept(ModBlocks.MOROSE_PRESSURE_PLATE);
                     output.accept(ModBlocks.MOROSE_LEAVES);
                     output.accept(ModBlocks.BUDDING_MOROSE_LEAVES);
+
+                    output.accept(ModItems.DIRTMAN_SPAWN_EGG);
 
                 }).build());
 

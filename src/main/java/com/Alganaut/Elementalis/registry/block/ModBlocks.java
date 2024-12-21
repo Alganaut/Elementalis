@@ -2,7 +2,7 @@ package com.Alganaut.Elementalis.registry.block;
 
 import com.Alganaut.Elementalis.Elementalis;
 import com.Alganaut.Elementalis.registry.block.custom.ModFlammableRotatedPillarBlock;
-import com.Alganaut.Elementalis.registry.item.Moditems;
+import com.Alganaut.Elementalis.registry.item.ModItems;
 import com.Alganaut.Elementalis.registry.worldgen.tree.ModTreeGrowers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -83,6 +83,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STRIPPED_MOROSE_WOOD = registerBlock("stripped_morose_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
 
+    public static final DeferredBlock<PressurePlateBlock> MOROSE_PRESSURE_PLATE = registerBlock("morose_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(1f).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> MOROSE_PLANKS = registerBlock("morose_planks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
                 @Override
@@ -159,7 +162,7 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(1f).noOcclusion()));
 
 private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        Moditems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

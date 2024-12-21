@@ -1,7 +1,7 @@
 package com.Alganaut.Elementalis.registry.trim;
 
 import com.Alganaut.Elementalis.Elementalis;
-import com.Alganaut.Elementalis.registry.item.Moditems;
+import com.Alganaut.Elementalis.registry.item.ModItems;
 import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -17,7 +17,7 @@ public class ModTrimPatterns {
             ResourceLocation.fromNamespaceAndPath(Elementalis.MODID, "perish"));
 
     public static void bootstrap(BootstrapContext<TrimPattern> context) {
-        register(context, Moditems.PERISH_SMITHING_TEMPLATE, PERISH);
+        register(context, ModItems.PERISH_SMITHING_TEMPLATE, PERISH);
     }
 
     private static void register(BootstrapContext<TrimPattern> context, DeferredItem<Item> item, ResourceKey<TrimPattern> key) {
