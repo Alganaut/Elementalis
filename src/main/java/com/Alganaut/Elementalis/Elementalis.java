@@ -2,25 +2,20 @@ package com.Alganaut.Elementalis;
 
 import com.Alganaut.Elementalis.registry.block.ModBlocks;
 import com.Alganaut.Elementalis.registry.entity.ModEntities;
-import com.Alganaut.Elementalis.registry.entity.client.DirtmanRenderer;
 import com.Alganaut.Elementalis.registry.item.ModCreativeModeTabs;
 import com.Alganaut.Elementalis.registry.item.ModItems;
 import com.Alganaut.Elementalis.registry.sound.ModSounds;
-import com.Alganaut.Elementalis.util.ModItemProperties;
-import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.world.item.CreativeModeTabs;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
@@ -93,16 +88,13 @@ public class Elementalis {
     }
 
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
+    public void onServerStarting(ServerStartingEvent event)
+    {
+
     }
 
-    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-            ModItemProperties.addCustomItemProperties();
-
-            EntityRenderers.register(ModEntities.DIRTMAN.get(), DirtmanRenderer::new);
-        }
+    public static ResourceLocation id(String path)
+    {
+        return ResourceLocation.fromNamespaceAndPath(MODID, path);
     }
 }

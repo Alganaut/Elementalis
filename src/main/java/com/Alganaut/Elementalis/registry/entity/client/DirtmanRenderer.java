@@ -1,25 +1,27 @@
 package com.Alganaut.Elementalis.registry.entity.client;
 
 import com.Alganaut.Elementalis.Elementalis;
+import com.Alganaut.Elementalis.registry.entity.client.layer.DirtmanClothingLayer;
 import com.Alganaut.Elementalis.registry.entity.custom.Dirtman;
-import com.mojang.blaze3d.vertex.PoseStack;
-import net.minecraft.client.renderer.MultiBufferSource;
+import com.Alganaut.Elementalis.registry.init.ElementalisRenderers;
+import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.SkeletonRenderer;
 import net.minecraft.resources.ResourceLocation;
 
-public class DirtmanRenderer extends MobRenderer<Dirtman, DirtmanModel<Dirtman>> {
-    public DirtmanRenderer(EntityRendererProvider.Context context) {
-        super(context, new DirtmanModel<>(context.bakeLayer(DirtmanModel.LAYER_LOCATION)), 0.5f);
+public class DirtmanRenderer extends SkeletonRenderer<Dirtman>
+{
+    private static final ResourceLocation DIRTMAN_LOCATION = ResourceLocation.fromNamespaceAndPath(Elementalis.MODID, "textures/entity/dirtman/dirtman.png");
+
+    public DirtmanRenderer(EntityRendererProvider.Context context)
+    {
+        super(context, ElementalisRenderers.DIRTMAN, ModelLayers.SKELETON_INNER_ARMOR, ModelLayers.SKELETON_OUTER_ARMOR);
+        this.addLayer(new DirtmanClothingLayer(this, context.getModelSet()));
     }
 
     @Override
-    public ResourceLocation getTextureLocation(Dirtman dirtman) {
-        return ResourceLocation.fromNamespaceAndPath(Elementalis.MODID, "textures/entity/dirtman/dirtman.png");
-    }
-
-    @Override
-    public void render(Dirtman entity, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
-        super.render(entity, entityYaw, partialTicks, poseStack, buffer, packedLight);
+    public ResourceLocation getTextureLocation(Dirtman entity)
+    {
+        return DIRTMAN_LOCATION;
     }
 }
