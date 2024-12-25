@@ -41,9 +41,6 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_TOMBSTONE_BRICKS = registerBlock("chiseled_tombstone_bricks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
-    public static final DeferredBlock<Block> TOMBSTONE_PILLAR = registerBlock("tombstone_pillar",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
 
     public static final DeferredBlock<StairBlock> TOMBSTONE_STAIRS = registerBlock("tombstone_stairs",
             () -> new StairBlock(ModBlocks.TOMBSTONE.get().defaultBlockState(),
@@ -82,6 +79,9 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_MOROSE_WOOD = registerBlock("stripped_morose_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final DeferredBlock<Block> TOMBSTONE_PILLAR = registerBlock("tombstone_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR)));
 
     public static final DeferredBlock<PressurePlateBlock> MOROSE_PRESSURE_PLATE = registerBlock("morose_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(1f).requiresCorrectToolForDrops()));

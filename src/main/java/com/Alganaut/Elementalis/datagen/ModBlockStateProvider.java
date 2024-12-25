@@ -26,7 +26,6 @@ blockWithItem(ModBlocks.TOMBSTONE);
         blockWithItem(ModBlocks.BLOOMING_TOMBSTONE_BRICKS);
         blockWithItem(ModBlocks.CRACKED_TOMBSTONE_BRICKS);
         blockWithItem(ModBlocks.CHISELED_TOMBSTONE_BRICKS);
-        blockWithItem(ModBlocks.TOMBSTONE_PILLAR);
         blockWithItem(ModBlocks.MOROSE_PLANKS);
 
         stairsBlock(ModBlocks.TOMBSTONE_STAIRS.get(), blockTexture(ModBlocks.TOMBSTONE.get()));
@@ -65,6 +64,8 @@ blockWithItem(ModBlocks.TOMBSTONE);
         blockItem(ModBlocks.STRIPPED_MOROSE_BRANCH);
         blockItem(ModBlocks.STRIPPED_MOROSE_WOOD);
 
+        blockItem(ModBlocks.TOMBSTONE_PILLAR);
+
         leavesBlock(ModBlocks.MOROSE_LEAVES);
         leavesBlock(ModBlocks.BUDDING_MOROSE_LEAVES);
         saplingBlock(ModBlocks.MOROSE_BUD);
@@ -80,6 +81,7 @@ blockWithItem(ModBlocks.TOMBSTONE);
         logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_MOROSE_BRANCH.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_MOROSE_WOOD.get()), blockTexture(ModBlocks.STRIPPED_MOROSE_BRANCH.get()), blockTexture(ModBlocks.STRIPPED_MOROSE_BRANCH.get()));
 
+        logBlock(((RotatedPillarBlock) ModBlocks.TOMBSTONE_PILLAR.get()));
 
 
     }

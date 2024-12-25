@@ -43,10 +43,16 @@
   "block.elementalis.morose_trapdoor": "Morose Trapdoor",
   "block.elementalis.morose_slab": "Morose Slab",
   "block.elementalis.morose_stairs": "Morose Stairs",
+  "block.elementalis.morose_pressure_plate": "Morose Pressure Plate",
 
 "creativetab.elementalis.elementalis": "Elementalis",
 
   "trim_pattern.elementalis.perish": "Perish Armor Trim",
 
-  "entity.mccourse.dirtman": "Dirtman"
+  "entity.mccourse.dirtman": "Dirtman",
+
+  "painting.elementalis.banquet.title": "Banquet",
+  "painting.elementalis.banquet.author": "Paxton W.",
+  "painting.elementalis.ambassador.title": "Ambassador",
+  "painting.elementalis.ambassador.author": "Paxton W."
 }
