@@ -33,6 +33,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('P', ModBlocks.POLISHED_TOMBSTONE.get())
                 .unlockedBy("has_tombstone", has(ModBlocks.TOMBSTONE)).save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOOMING_TOMBSTONE_BRICKS.get(), 1)
+                .requires(ModBlocks.TOMBSTONE_BRICKS)
+                .requires(ModBlocks.MOROSE_LEAVES)
+                .unlockedBy("has_tombstone", has(ModBlocks.TOMBSTONE)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOOMING_TOMBSTONE_BRICKS.get(), 1)
+                .requires(ModBlocks.TOMBSTONE_BRICKS)
+                .requires(ModBlocks.BUDDING_MOROSE_LEAVES)
+                .unlockedBy("has_tombstone", has(ModBlocks.TOMBSTONE)).save(recipeOutput, "elementalis:blooming_bricks_budding");
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLIGHT_POWDER.get(), 2)
                 .requires(ModItems.BLIGHT_ROD)
                 .unlockedBy("has_blight_rod", has(ModItems.BLIGHT_ROD)).save(recipeOutput);
@@ -113,6 +123,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_morose_branch", has(ModBlocks.MOROSE_BRANCH)).save(recipeOutput, "elementalis:morose_planks_4");
 
         pressurePlate(recipeOutput, ModBlocks.MOROSE_PRESSURE_PLATE.get(), ModBlocks.MOROSE_PLANKS.get());
+
+        buttonBuilder(ModBlocks.MOROSE_BUTTON.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS.get())).group("morose_planks")
+                .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS.get())).save(recipeOutput);
+
+        fenceBuilder(ModBlocks.MOROSE_FENCE.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS.get())).group("morose_planks")
+                .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS.get())).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.MOROSE_FENCE_GATE.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS.get())).group("morose_planks")
+                .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS.get())).save(recipeOutput);
 
     }
 

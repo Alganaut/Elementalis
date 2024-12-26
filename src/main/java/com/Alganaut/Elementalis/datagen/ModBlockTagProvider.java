@@ -32,6 +32,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WALLS).add(ModBlocks.TOMBSTONE_WALL.get());
         tag(BlockTags.WALLS).add(ModBlocks.POLISHED_TOMBSTONE_WALL.get());
         tag(BlockTags.WALLS).add(ModBlocks.TOMBSTONE_BRICK_WALL.get());
+        tag(BlockTags.WOODEN_FENCES).add(ModBlocks.MOROSE_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.MOROSE_FENCE_GATE.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.MOROSE_BRANCH.get())

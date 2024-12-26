@@ -60,7 +60,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.MOROSE_WOOD.get());
         dropSelf(ModBlocks.STRIPPED_MOROSE_BRANCH.get());
         dropSelf(ModBlocks.MOROSE_TRAPDOOR.get());
-        dropSelf(ModBlocks.MOROSE_PRESSURE_PLATE    .get());
+        dropSelf(ModBlocks.MOROSE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.MOROSE_BUTTON.get());
+        dropSelf(ModBlocks.MOROSE_FENCE.get());
+        dropSelf(ModBlocks.MOROSE_FENCE_GATE.get());
 
         dropSelf(ModBlocks.MOROSE_BUD.get());
 

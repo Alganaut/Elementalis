@@ -70,6 +70,13 @@ blockWithItem(ModBlocks.TOMBSTONE);
         leavesBlock(ModBlocks.BUDDING_MOROSE_LEAVES);
         saplingBlock(ModBlocks.MOROSE_BUD);
 
+        blockItem(ModBlocks.MOROSE_FENCE_GATE);
+
+        buttonBlock(ModBlocks.MOROSE_BUTTON.get(), blockTexture(ModBlocks.MOROSE_PLANKS.get()));
+
+        fenceBlock(ModBlocks.MOROSE_FENCE.get(), blockTexture(ModBlocks.MOROSE_PLANKS.get()));
+        fenceGateBlock(ModBlocks.MOROSE_FENCE_GATE.get(), blockTexture(ModBlocks.MOROSE_PLANKS.get()));
+
         blockItem(ModBlocks.BLACK_IRON_TRAPDOOR, "_bottom");
         blockItem(ModBlocks.MOROSE_TRAPDOOR, "_bottom");
 

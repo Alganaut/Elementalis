@@ -66,24 +66,55 @@ public class Elementalis {
 
         }
 
+        if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+            event.accept(ModItems.DIRTMAN_SPAWN_EGG);
+        }
+
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.SIX_MUSIC_DISC);
         }
 
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.TOMBSTONE);
+            event.accept(ModBlocks.MOROSE_BUD);
+            event.accept(ModBlocks.MOROSE_LEAVES);
+            event.accept(ModBlocks.BUDDING_MOROSE_LEAVES);
+        }
+
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TOMBSTONE);
+            event.accept(ModBlocks.TOMBSTONE_STAIRS);
+            event.accept(ModBlocks.TOMBSTONE_SLAB);
+            event.accept(ModBlocks.TOMBSTONE_WALL);
             event.accept(ModBlocks.POLISHED_TOMBSTONE);
+            event.accept(ModBlocks.POLISHED_TOMBSTONE_STAIRS);
+            event.accept(ModBlocks.POLISHED_TOMBSTONE_SLAB);
+            event.accept(ModBlocks.POLISHED_TOMBSTONE_WALL);
             event.accept(ModBlocks.TOMBSTONE_BRICKS);
+            event.accept(ModBlocks.TOMBSTONE_BRICK_STAIRS);
+            event.accept(ModBlocks.TOMBSTONE_BRICK_SLAB);
+            event.accept(ModBlocks.TOMBSTONE_BRICK_WALL);
             event.accept(ModBlocks.BLOOMING_TOMBSTONE_BRICKS);
             event.accept(ModBlocks.CHISELED_TOMBSTONE_BRICKS);
             event.accept(ModBlocks.CRACKED_TOMBSTONE_BRICKS);
             event.accept(ModBlocks.TOMBSTONE_PILLAR);
+
             event.accept(ModBlocks.MOROSE_BRANCH);
-            event.accept(ModBlocks.STRIPPED_MOROSE_BRANCH);
             event.accept(ModBlocks.MOROSE_WOOD);
+            event.accept(ModBlocks.STRIPPED_MOROSE_BRANCH);
             event.accept(ModBlocks.STRIPPED_MOROSE_WOOD);
             event.accept(ModBlocks.MOROSE_PLANKS);
+            event.accept(ModBlocks.MOROSE_STAIRS);
+            event.accept(ModBlocks.MOROSE_SLAB);
+            event.accept(ModBlocks.MOROSE_FENCE);
+            event.accept(ModBlocks.MOROSE_FENCE_GATE);
+            event.accept(ModBlocks.MOROSE_DOOR);
+            event.accept(ModBlocks.MOROSE_TRAPDOOR);
+            event.accept(ModBlocks.MOROSE_PRESSURE_PLATE);
+            event.accept(ModBlocks.MOROSE_BUTTON);
 
+            event.accept(ModBlocks.BLACK_IRON_DOOR);
+            event.accept(ModBlocks.BLACK_IRON_TRAPDOOR);
         }
     }
 

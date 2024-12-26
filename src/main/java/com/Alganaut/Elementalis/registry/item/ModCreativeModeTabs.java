@@ -52,15 +52,18 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
 
                     output.accept(ModBlocks.MOROSE_BUD);
                     output.accept(ModBlocks.MOROSE_BRANCH);
-                    output.accept(ModBlocks.STRIPPED_MOROSE_BRANCH);
                     output.accept(ModBlocks.MOROSE_WOOD);
+                    output.accept(ModBlocks.STRIPPED_MOROSE_BRANCH);
                     output.accept(ModBlocks.STRIPPED_MOROSE_WOOD);
                     output.accept(ModBlocks.MOROSE_PLANKS);
                     output.accept(ModBlocks.MOROSE_STAIRS);
                     output.accept(ModBlocks.MOROSE_SLAB);
+                    output.accept(ModBlocks.MOROSE_FENCE);
+                    output.accept(ModBlocks.MOROSE_FENCE_GATE);
                     output.accept(ModBlocks.MOROSE_DOOR);
                     output.accept(ModBlocks.MOROSE_TRAPDOOR);
                     output.accept(ModBlocks.MOROSE_PRESSURE_PLATE);
+                    output.accept(ModBlocks.MOROSE_BUTTON);
                     output.accept(ModBlocks.MOROSE_LEAVES);
                     output.accept(ModBlocks.BUDDING_MOROSE_LEAVES);
 

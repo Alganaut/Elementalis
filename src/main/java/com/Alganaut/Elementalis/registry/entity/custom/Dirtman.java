@@ -50,13 +50,13 @@ public class Dirtman extends AbstractSkeleton {
         return SoundEvents.STRAY_STEP;
     }
 
-    protected AbstractArrow getArrow(ItemStack arrow, float velocity, @Nullable ItemStack weapon) {
-        AbstractArrow abstractarrow = super.getArrow(arrow, velocity, weapon);
-        if (abstractarrow instanceof Arrow)
-            //This is 30 Seconds of Weakness 1
-            ((Arrow)abstractarrow).addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 600));
-
-        return abstractarrow;
+    protected AbstractArrow getArrow(ItemStack stack, float velocity, @Nullable ItemStack weapon)
+    {
+        AbstractArrow abstractArrow = super.getArrow(stack, velocity, weapon);
+        if (abstractArrow instanceof Arrow arrow && this.random.nextFloat() < 0.25)
+            //6 Seconds of Weakness 2
+            arrow.addEffect(new MobEffectInstance(MobEffects.WITHER, 120, 1));
+        return abstractArrow;
     }
 
     //Example of making it so that it only occasionally shoots Weakness arrows

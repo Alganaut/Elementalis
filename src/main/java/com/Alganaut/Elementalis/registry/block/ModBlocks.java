@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -105,7 +106,7 @@ public class ModBlocks {
             });
 
     public static final DeferredBlock<Block> MOROSE_LEAVES = registerBlock("morose_leaves",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AZALEA_LEAVES)) {
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -123,7 +124,7 @@ public class ModBlocks {
             });
 
     public static final DeferredBlock<Block> BUDDING_MOROSE_LEAVES = registerBlock("budding_morose_leaves",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES)) {
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -149,6 +150,15 @@ public class ModBlocks {
 
     public static final DeferredBlock<SlabBlock> MOROSE_SLAB = registerBlock("morose_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1f)));
+
+    public static final DeferredBlock<ButtonBlock> MOROSE_BUTTON = registerBlock("morose_button",
+            () -> new ButtonBlock(BlockSetType.OAK, 20, BlockBehaviour.Properties.of().strength(1f).noCollission()));
+
+    public static final DeferredBlock<FenceBlock> MOROSE_FENCE = registerBlock("morose_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(1f)));
+
+    public static final DeferredBlock<FenceGateBlock> MOROSE_FENCE_GATE = registerBlock("morose_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(1f)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -33,6 +33,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         saplingItem(ModBlocks.MOROSE_BUD);
 
+        buttonItem(ModBlocks.MOROSE_BUTTON, ModBlocks.MOROSE_PLANKS);
+
+        fenceItem(ModBlocks.MOROSE_FENCE, ModBlocks.MOROSE_PLANKS);
+
         withExistingParent(ModItems.DIRTMAN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
@@ -44,6 +48,18 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     public void wallItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
-                .texture("wall",  ResourceLocation.fromNamespaceAndPath(Elementalis.MODID,
+                .texture("wall", ResourceLocation.fromNamespaceAndPath(Elementalis.MODID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(Elementalis.MODID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void fenceItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(Elementalis.MODID,
                         "block/" + baseBlock.getId().getPath()));
 }}
