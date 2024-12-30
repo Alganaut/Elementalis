@@ -1,6 +1,9 @@
 {
   "values": [
     "elementalis:banquet",
+    "elementalis:conversation",
+    "elementalis:sausagenesis",
+    "elementalis:telephone",
     "elementalis:ambassador"
   ]
 }
