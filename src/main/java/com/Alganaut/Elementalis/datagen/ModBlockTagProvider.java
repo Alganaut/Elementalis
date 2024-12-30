@@ -25,9 +25,22 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BLOOMING_TOMBSTONE_BRICKS.get())
                 .add(ModBlocks.CRACKED_TOMBSTONE_BRICKS.get())
                 .add(ModBlocks.CHISELED_TOMBSTONE_BRICKS.get())
-                .add(ModBlocks.TOMBSTONE_PILLAR.get());
+                .add(ModBlocks.TOMBSTONE_PILLAR.get())
+                .add(ModBlocks.TOMBSTONE_SLAB.get())
+                .add(ModBlocks.TOMBSTONE_STAIRS.get())
+                .add(ModBlocks.TOMBSTONE_WALL.get())
+                .add(ModBlocks.POLISHED_TOMBSTONE_STAIRS.get())
+                .add(ModBlocks.POLISHED_TOMBSTONE_SLAB.get())
+                .add(ModBlocks.POLISHED_TOMBSTONE_WALL.get())
+                .add(ModBlocks.TOMBSTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.TOMBSTONE_BRICK_SLAB.get())
+                .add(ModBlocks.TOMBSTONE_BRICK_WALL.get());
 
-        tag(BlockTags.NEEDS_IRON_TOOL);
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.BLACK_IRON_DOOR.get())
+                .add(ModBlocks.BLACK_IRON_TRAPDOOR.get())
+                .add(ModBlocks.BLACK_IRON_BARS.get());
+
 
         tag(BlockTags.WALLS).add(ModBlocks.TOMBSTONE_WALL.get());
         tag(BlockTags.WALLS).add(ModBlocks.POLISHED_TOMBSTONE_WALL.get());

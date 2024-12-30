@@ -49,6 +49,7 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
 
                     output.accept(ModBlocks.BLACK_IRON_DOOR);
                     output.accept(ModBlocks.BLACK_IRON_TRAPDOOR);
+                    output.accept(ModBlocks.BLACK_IRON_BARS);
 
                     output.accept(ModBlocks.MOROSE_BUD);
                     output.accept(ModBlocks.MOROSE_BRANCH);

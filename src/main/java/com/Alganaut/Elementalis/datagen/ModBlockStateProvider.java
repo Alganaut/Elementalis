@@ -6,6 +6,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SaplingBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -48,6 +49,8 @@ blockWithItem(ModBlocks.TOMBSTONE);
         doorBlockWithRenderType(ModBlocks.MOROSE_DOOR.get(), modLoc("block/morose_door_bottom"), modLoc("block/morose_door_top"), "cutout");
         trapdoorBlockWithRenderType(ModBlocks.MOROSE_TRAPDOOR.get(), modLoc("block/morose_trapdoor"), true, "cutout");
 
+        paneBlockWithRenderType((IronBarsBlock)ModBlocks.BLACK_IRON_BARS.get(), modLoc("block/black_iron_bars"), modLoc("block/black_iron_bars_top"), "translucent");
+
         blockItem(ModBlocks.TOMBSTONE_STAIRS);
         blockItem(ModBlocks.POLISHED_TOMBSTONE_STAIRS);
         blockItem(ModBlocks.TOMBSTONE_BRICK_STAIRS);
@@ -69,6 +72,8 @@ blockWithItem(ModBlocks.TOMBSTONE);
         leavesBlock(ModBlocks.MOROSE_LEAVES);
         leavesBlock(ModBlocks.BUDDING_MOROSE_LEAVES);
         saplingBlock(ModBlocks.MOROSE_BUD);
+        
+        paneBlockWithRenderType(ModBlocks.BLACK_IRON_BARS);
 
         blockItem(ModBlocks.MOROSE_FENCE_GATE);
 
@@ -90,7 +95,9 @@ blockWithItem(ModBlocks.TOMBSTONE);
 
         logBlock(((RotatedPillarBlock) ModBlocks.TOMBSTONE_PILLAR.get()));
 
+    }
 
+    private void paneBlockWithRenderType(DeferredBlock<IronBarsBlock> blackIronBars) {
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {

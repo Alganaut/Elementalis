@@ -54,8 +54,8 @@ public class Dirtman extends AbstractSkeleton {
     {
         AbstractArrow abstractArrow = super.getArrow(stack, velocity, weapon);
         if (abstractArrow instanceof Arrow arrow && this.random.nextFloat() < 0.25)
-            //6 Seconds of Weakness 2
-            arrow.addEffect(new MobEffectInstance(MobEffects.WITHER, 120, 1));
+
+            arrow.addEffect(new MobEffectInstance(MobEffects.HARM, 20, 1));
         return abstractArrow;
     }
 

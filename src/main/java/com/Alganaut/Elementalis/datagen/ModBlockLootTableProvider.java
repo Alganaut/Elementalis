@@ -35,6 +35,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         dropSelf(ModBlocks.BLACK_IRON_TRAPDOOR.get());
 
+        dropSelf(ModBlocks.BLACK_IRON_BARS.get());
+
         add(ModBlocks.BLACK_IRON_DOOR.get(),
                 block -> createDoorTable(ModBlocks.MOROSE_DOOR.get()));
 

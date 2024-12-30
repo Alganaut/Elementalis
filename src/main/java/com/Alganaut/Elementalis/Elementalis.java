@@ -115,6 +115,7 @@ public class Elementalis {
 
             event.accept(ModBlocks.BLACK_IRON_DOOR);
             event.accept(ModBlocks.BLACK_IRON_TRAPDOOR);
+            event.accept(ModBlocks.BLACK_IRON_BARS);
         }
     }
 

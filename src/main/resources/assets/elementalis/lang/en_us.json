@@ -30,6 +30,7 @@
 
   "block.elementalis.black_iron_door": "Black Iron Door",
   "block.elementalis.black_iron_trapdoor": "Black Iron Trapdoor",
+  "block.elementalis.black_iron_bars": "Black Iron Bars",
 
   "block.elementalis.morose_branch": "Morose Branch",
   "block.elementalis.morose_wood": "Morose Wood",
@@ -56,6 +57,12 @@
 
   "painting.elementalis.banquet.title": "Banquet",
   "painting.elementalis.banquet.author": "Paxton W.",
+  "painting.elementalis.sausagenesis.title": "Sausagenesis",
+  "painting.elementalis.sausagenesis.author": "Paxton W.",
+  "painting.elementalis.telephone.title": "Telephone",
+  "painting.elementalis.telephone.author": "Paxton W.",
   "painting.elementalis.ambassador.title": "Ambassador",
-  "painting.elementalis.ambassador.author": "Paxton W."
+  "painting.elementalis.ambassador.author": "Paxton W.",
+  "painting.elementalis.conversation.title": "Conversation",
+  "painting.elementalis.conversation.author": "Paxton W."
 }

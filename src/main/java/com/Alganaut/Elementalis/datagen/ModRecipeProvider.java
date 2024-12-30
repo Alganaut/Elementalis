@@ -81,7 +81,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TOMBSTONE_BRICK_SLAB.get(), ModBlocks.TOMBSTONE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLACK_IRON_DOOR.get(), 3)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_IRON_DOOR.get(), 3)
                 .pattern(" II")
                 .pattern("BII")
                 .pattern(" II")
@@ -89,10 +89,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', Items.BLACK_DYE)
                 .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLACK_IRON_TRAPDOOR.get(), 4)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_IRON_TRAPDOOR.get(), 4)
                 .pattern(" B ")
                 .pattern("III")
                 .pattern("III")
+                .define('I', Items.IRON_INGOT)
+                .define('B', Items.BLACK_DYE)
+                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_IRON_BARS.get(), 16)
+                .pattern("III")
+                .pattern("III")
+                .pattern(" B ")
                 .define('I', Items.IRON_INGOT)
                 .define('B', Items.BLACK_DYE)
                 .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT)).save(recipeOutput);

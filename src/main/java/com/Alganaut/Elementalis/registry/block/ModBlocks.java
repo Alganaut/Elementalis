@@ -72,6 +72,9 @@ public class ModBlocks {
     public static final DeferredBlock<TrapDoorBlock> BLACK_IRON_TRAPDOOR = registerBlock("black_iron_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
 
+    public static final DeferredBlock<IronBarsBlock> BLACK_IRON_BARS = registerBlock("black_iron_bars",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BARS)));
+
     public static final DeferredBlock<Block> MOROSE_BRANCH = registerBlock("morose_branch",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> MOROSE_WOOD = registerBlock("morose_wood",

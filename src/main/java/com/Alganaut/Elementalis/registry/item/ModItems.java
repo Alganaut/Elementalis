@@ -5,7 +5,9 @@ import com.Alganaut.Elementalis.registry.entity.ModEntities;
 import com.Alganaut.Elementalis.registry.sound.ModSounds;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SmithingTemplateItem;
+import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -30,6 +32,7 @@ public class ModItems {
     public static final DeferredItem<Item> DIRTMAN_SPAWN_EGG = ITEMS.register("dirtman_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.DIRTMAN, 0xa1c2a7, 0x8c6a43,
                     new Item.Properties()));
+
 
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);
