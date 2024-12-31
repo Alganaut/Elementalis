@@ -33,6 +33,10 @@ public class ModItems {
             () -> new DeferredSpawnEggItem(ModEntities.DIRTMAN, 0xa1c2a7, 0x8c6a43,
                     new Item.Properties()));
 
+    public static final DeferredItem<Item> BLIGHT_SPAWN_EGG = ITEMS.register("blight_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.BLIGHT, 0x8d9e38, 0xd0e278,
+                    new Item.Properties()));
+
 
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);

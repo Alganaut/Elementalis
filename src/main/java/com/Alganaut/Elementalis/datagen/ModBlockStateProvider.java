@@ -21,7 +21,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-blockWithItem(ModBlocks.TOMBSTONE);
+        blockWithItem(ModBlocks.TOMBSTONE);
+        blockWithItem(ModBlocks.TOMBSOIL);
         blockWithItem(ModBlocks.POLISHED_TOMBSTONE);
         blockWithItem(ModBlocks.TOMBSTONE_BRICKS);
         blockWithItem(ModBlocks.BLOOMING_TOMBSTONE_BRICKS);

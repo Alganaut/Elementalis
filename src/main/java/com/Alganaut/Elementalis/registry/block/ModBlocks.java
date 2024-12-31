@@ -27,6 +27,11 @@ public class ModBlocks {
     public static final DeferredBlock<Block> TOMBSTONE = registerBlock("tombstone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> TOMBSOIL = registerBlock("tombsoil",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1f).sound(SoundType.GRAVEL)));
+
     public static final DeferredBlock<Block> POLISHED_TOMBSTONE = registerBlock("polished_tombstone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.POLISHED_DEEPSLATE)));

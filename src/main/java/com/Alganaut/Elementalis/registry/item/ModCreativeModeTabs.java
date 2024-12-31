@@ -27,6 +27,7 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
 
                     output.accept(ModItems.PERISH_SMITHING_TEMPLATE);
 
+                    output.accept(ModBlocks.TOMBSOIL);
                     output.accept(ModBlocks.TOMBSTONE);
                     output.accept(ModBlocks.TOMBSTONE_STAIRS);
                     output.accept(ModBlocks.TOMBSTONE_SLAB);
@@ -68,6 +69,7 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
                     output.accept(ModBlocks.MOROSE_LEAVES);
                     output.accept(ModBlocks.BUDDING_MOROSE_LEAVES);
 
+                    output.accept(ModItems.BLIGHT_SPAWN_EGG);
                     output.accept(ModItems.DIRTMAN_SPAWN_EGG);
 
                 }).build());

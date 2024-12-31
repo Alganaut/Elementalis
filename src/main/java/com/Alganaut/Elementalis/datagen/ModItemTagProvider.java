@@ -6,6 +6,7 @@ import com.Alganaut.Elementalis.registry.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -33,5 +34,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.MOROSE_PLANKS.asItem());
 
+        this.tag(ItemTags.DIRT)
+                .add(ModBlocks.TOMBSOIL.asItem());
+
+        this.tag(ItemTags.LEAVES)
+                .add(ModBlocks.MOROSE_LEAVES.asItem())
+                .add(ModBlocks.BUDDING_MOROSE_LEAVES.asItem());
+
+        this.tag(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(ModBlocks.TOMBSTONE.asItem());
     }
 }

@@ -5,6 +5,7 @@
   "item.elementalis.undead_charge": "Undead Charge",
 
   "item.elementalis.dirtman_spawn_egg": "Dirtman Spawn Egg",
+  "item.elementalis.blight_spawn_egg": "Blight Spawn Egg",
 
   "item.elementalis.perish_armor_trim_smithing_template": "Smithing Template",
 
@@ -12,6 +13,7 @@
   "item.elementalis.6_music_disc.desc": "Alganaut - 6'",
 
   "block.elementalis.tombstone": "Tombstone",
+  "block.elementalis.tombsoil": "Tombsoil",
   "block.elementalis.tombstone_stairs": "Tombstone Stairs",
   "block.elementalis.tombstone_slab": "Tombstone Slab",
   "block.elementalis.tombstone_wall": "Tombstone Wall",
@@ -54,6 +56,7 @@
   "trim_pattern.elementalis.perish": "Perish Armor Trim",
 
   "entity.mccourse.dirtman": "Dirtman",
+  "entity.mccourse.blight": "Blight",
 
   "painting.elementalis.banquet.title": "Banquet",
   "painting.elementalis.banquet.author": "Paxton W.",

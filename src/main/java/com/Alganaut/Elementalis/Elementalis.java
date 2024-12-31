@@ -2,10 +2,16 @@ package com.Alganaut.Elementalis;
 
 import com.Alganaut.Elementalis.registry.block.ModBlocks;
 import com.Alganaut.Elementalis.registry.entity.ModEntities;
+import com.Alganaut.Elementalis.registry.entity.client.BlightRenderer;
 import com.Alganaut.Elementalis.registry.item.ModCreativeModeTabs;
 import com.Alganaut.Elementalis.registry.item.ModItems;
 import com.Alganaut.Elementalis.registry.sound.ModSounds;
+import com.Alganaut.Elementalis.util.ModItemProperties;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -20,6 +26,8 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+
+import static net.neoforged.neoforge.internal.versions.neoforge.NeoForgeVersion.MOD_ID;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(Elementalis.MODID)
@@ -67,6 +75,7 @@ public class Elementalis {
         }
 
         if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+            event.accept(ModItems.BLIGHT_SPAWN_EGG);
             event.accept(ModItems.DIRTMAN_SPAWN_EGG);
         }
 
@@ -125,8 +134,8 @@ public class Elementalis {
 
     }
 
-    public static ResourceLocation id(String path)
-    {
-        return ResourceLocation.fromNamespaceAndPath(MODID, path);
+        public static ResourceLocation id(String path) {
+            return ResourceLocation.fromNamespaceAndPath(MODID, path);
+        }
+
     }
-}
