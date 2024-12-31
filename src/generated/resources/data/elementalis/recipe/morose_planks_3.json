@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "elementalis:stripped_morose_branch"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "elementalis:morose_planks"
+  }
+}

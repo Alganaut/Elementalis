@@ -1,0 +1,8 @@
+{
+  "asset_id": "elementalis:perish",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.elementalis.perish"
+  },
+  "template_item": "elementalis:perish_armor_trim_smithing_template"
+}

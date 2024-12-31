@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blight_rod": {
+      "conditions": {
+        "items": [
+          {
+            "items": "elementalis:blight_rod"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "elementalis:blight_powder"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blight_rod"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "elementalis:blight_powder"
+    ]
+  }
+}

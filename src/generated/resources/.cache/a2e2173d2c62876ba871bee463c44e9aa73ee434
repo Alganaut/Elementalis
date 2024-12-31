@@ -1,0 +1,7 @@
+// 1.21.1	2024-12-30T19:15:53.0919724	Tags for minecraft:item mod id elementalis
+f781fb7a87f5b6cab7424ded4b6cc9d9b907643e data/minecraft/tags/item/dirt.json
+046254a7d33f052e45fe3bcb8371458a0dd6aef5 data/minecraft/tags/item/leaves.json
+493d4ab130c97d019f67f4d5be9ac695e08b5ef0 data/minecraft/tags/item/logs_that_burn.json
+9d3688f8f6d3d0b87d136020422454817f879c5d data/minecraft/tags/item/planks.json
+147e7a83aa4d7d36968e9de8d6e0da055d4db437 data/minecraft/tags/item/stone_crafting_materials.json
+94237cec3189ec682b97972b56515f0f9f54f88b data/minecraft/tags/item/trim_templates.json

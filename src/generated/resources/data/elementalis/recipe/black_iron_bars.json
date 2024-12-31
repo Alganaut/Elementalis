@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "minecraft:black_dye"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "III",
+    " B "
+  ],
+  "result": {
+    "count": 16,
+    "id": "elementalis:black_iron_bars"
+  }
+}

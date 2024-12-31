@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "morose_planks",
+  "ingredients": [
+    {
+      "item": "elementalis:morose_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "elementalis:morose_button"
+  }
+}

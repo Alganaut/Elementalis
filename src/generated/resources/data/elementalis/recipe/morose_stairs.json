@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "morose_planks",
+  "key": {
+    "#": {
+      "item": "elementalis:morose_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "elementalis:morose_stairs"
+  }
+}

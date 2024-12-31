@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "tombstone",
+  "key": {
+    "#": {
+      "item": "elementalis:polished_tombstone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "elementalis:polished_tombstone_stairs"
+  }
+}

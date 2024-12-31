@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementalis:block/morose_slab"
+    },
+    "type=double": {
+      "model": "elementalis:block/morose_planks"
+    },
+    "type=top": {
+      "model": "elementalis:block/morose_slab_top"
+    }
+  }
+}

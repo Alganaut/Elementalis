@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side_alt",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "edge": "elementalis:block/black_iron_bars_top",
+    "pane": "elementalis:block/black_iron_bars"
+  }
+}

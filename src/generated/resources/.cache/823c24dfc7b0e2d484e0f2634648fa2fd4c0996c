@@ -1,0 +1,7 @@
+// 1.21.1	2024-12-29T13:18:36.6869182	Tags for minecraft:block mod id elementalis
+39492f74a88201b0200b0dcffd28989e1ecdb6e5 data/minecraft/tags/block/fence_gates.json
+493d4ab130c97d019f67f4d5be9ac695e08b5ef0 data/minecraft/tags/block/logs_that_burn.json
+6be705adce766db05b73933f4fb531db83d37937 data/minecraft/tags/block/mineable/pickaxe.json
+9db14badb2f023f31d387bd6a1b38d961790dd87 data/minecraft/tags/block/needs_iron_tool.json
+15a747210b91959f86f04ed6ffa5b0af42c88509 data/minecraft/tags/block/walls.json
+ebf76cdd90f522f4f921ecb9f067b00e38968374 data/minecraft/tags/block/wooden_fences.json
