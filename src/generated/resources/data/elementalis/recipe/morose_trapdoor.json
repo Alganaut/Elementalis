@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "morose_planks",
+  "key": {
+    "#": {
+      "item": "elementalis:morose_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "elementalis:morose_trapdoor"
+  }
+}

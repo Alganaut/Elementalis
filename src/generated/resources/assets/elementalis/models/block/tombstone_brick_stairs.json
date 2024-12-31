@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "elementalis:block/tombstone_bricks",
+    "side": "elementalis:block/tombstone_bricks",
+    "top": "elementalis:block/tombstone_bricks"
+  }
+}

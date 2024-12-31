@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementalis:block/polished_tombstone_slab"
+    },
+    "type=double": {
+      "model": "elementalis:block/polished_tombstone"
+    },
+    "type=top": {
+      "model": "elementalis:block/polished_tombstone_slab_top"
+    }
+  }
+}

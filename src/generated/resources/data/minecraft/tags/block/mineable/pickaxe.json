@@ -1,0 +1,20 @@
+{
+  "values": [
+    "elementalis:tombstone",
+    "elementalis:polished_tombstone",
+    "elementalis:tombstone_bricks",
+    "elementalis:blooming_tombstone_bricks",
+    "elementalis:cracked_tombstone_bricks",
+    "elementalis:chiseled_tombstone_bricks",
+    "elementalis:tombstone_pillar",
+    "elementalis:tombstone_slab",
+    "elementalis:tombstone_stairs",
+    "elementalis:tombstone_wall",
+    "elementalis:polished_tombstone_stairs",
+    "elementalis:polished_tombstone_slab",
+    "elementalis:polished_tombstone_wall",
+    "elementalis:tombstone_brick_stairs",
+    "elementalis:tombstone_brick_slab",
+    "elementalis:tombstone_brick_wall"
+  ]
+}

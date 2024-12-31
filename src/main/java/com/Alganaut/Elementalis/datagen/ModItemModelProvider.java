@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
@@ -32,6 +33,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModBlocks.MOROSE_DOOR.asItem());
 
         saplingItem(ModBlocks.MOROSE_BUD);
+
+        this.getBuilder(ModBlocks.BLACK_IRON_BARS.getId().toString())
+                .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                .texture("layer0", this.modLoc("block/black_iron_bars"))
+                .renderType("translucent");
 
         buttonItem(ModBlocks.MOROSE_BUTTON, ModBlocks.MOROSE_PLANKS);
 

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "elementalis:block/polished_tombstone",
+    "side": "elementalis:block/polished_tombstone",
+    "top": "elementalis:block/polished_tombstone"
+  }
+}

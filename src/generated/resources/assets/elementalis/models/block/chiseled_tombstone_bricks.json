@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "elementalis:block/chiseled_tombstone_bricks"
+  }
+}

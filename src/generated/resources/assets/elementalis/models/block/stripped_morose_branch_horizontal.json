@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "elementalis:block/stripped_morose_branch_top",
+    "side": "elementalis:block/stripped_morose_branch"
+  }
+}

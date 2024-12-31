@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementalis:block/tombstone_brick_slab"
+    },
+    "type=double": {
+      "model": "elementalis:block/tombstone_bricks"
+    },
+    "type=top": {
+      "model": "elementalis:block/tombstone_brick_slab_top"
+    }
+  }
+}

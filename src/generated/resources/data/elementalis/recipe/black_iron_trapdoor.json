@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "minecraft:black_dye"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    " B ",
+    "III",
+    "III"
+  ],
+  "result": {
+    "count": 4,
+    "id": "elementalis:black_iron_trapdoor"
+  }
+}
