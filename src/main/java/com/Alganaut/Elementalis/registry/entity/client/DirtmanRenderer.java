@@ -16,7 +16,7 @@ public class DirtmanRenderer extends SkeletonRenderer<Dirtman>
     public DirtmanRenderer(EntityRendererProvider.Context context)
     {
         super(context, ElementalisRenderers.DIRTMAN, ModelLayers.SKELETON_INNER_ARMOR, ModelLayers.SKELETON_OUTER_ARMOR);
-        this.addLayer(new DirtmanClothingLayer(this, context.getModelSet()));
+        this.addLayer(new DirtmanClothingLayer<>(this, context.getModelSet()));
     }
 
     @Override

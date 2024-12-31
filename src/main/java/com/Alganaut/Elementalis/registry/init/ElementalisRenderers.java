@@ -2,6 +2,8 @@ package com.Alganaut.Elementalis.registry.init;
 
 import com.Alganaut.Elementalis.Elementalis;
 import com.Alganaut.Elementalis.registry.entity.ModEntities;
+import com.Alganaut.Elementalis.registry.entity.client.BlightModel;
+import com.Alganaut.Elementalis.registry.entity.client.BlightRenderer;
 import com.Alganaut.Elementalis.registry.entity.client.DirtmanRenderer;
 import com.Alganaut.Elementalis.registry.entity.client.model.DirtmanClothingModel;
 import net.minecraft.client.model.HumanoidArmorModel;
@@ -33,10 +35,13 @@ public class ElementalisRenderers
     //Mob's Clothing Layer(s)
     public static final ModelLayerLocation DIRTMAN_OUTER_LAYER = new ModelLayerLocation(Elementalis.id("dirtman"), "outer_layer");
 
+    public static final ModelLayerLocation BLIGHT = new ModelLayerLocation(Elementalis.id("blight"), "main");
+
     @SubscribeEvent
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event)
     {
         event.registerEntityRenderer(ModEntities.DIRTMAN.get(), DirtmanRenderer::new);
+        event.registerEntityRenderer(ModEntities.BLIGHT.get(), BlightRenderer::new);
     }
 
     @SubscribeEvent
@@ -53,5 +58,8 @@ public class ElementalisRenderers
         event.registerLayerDefinition(DIRTMAN_INNER_ARMOR, () -> humanoidInner);
         event.registerLayerDefinition(DIRTMAN_OUTER_ARMOR, () -> humanoidOuter);
         event.registerLayerDefinition(DIRTMAN_OUTER_LAYER, () -> dirtmanClothingLayer);
+        event.registerLayerDefinition(BLIGHT, BlightModel::createBodyLayer);
     }
+
+
 }
