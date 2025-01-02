@@ -34,7 +34,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_TOMBSTONE_WALL.get())
                 .add(ModBlocks.TOMBSTONE_BRICK_STAIRS.get())
                 .add(ModBlocks.TOMBSTONE_BRICK_SLAB.get())
-                .add(ModBlocks.TOMBSTONE_BRICK_WALL.get());
+                .add(ModBlocks.TOMBSTONE_BRICK_WALL.get())
+                .add(ModBlocks.TOMBSTONE_BRICK_WALL.get())
+                .add(ModBlocks.BLACK_IRON_DOOR.get())
+                .add(ModBlocks.BLACK_IRON_TRAPDOOR.get())
+                .add(ModBlocks.BLACK_IRON_BARS.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLACK_IRON_DOOR.get())
@@ -46,12 +50,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WALLS).add(ModBlocks.POLISHED_TOMBSTONE_WALL.get());
         tag(BlockTags.WALLS).add(ModBlocks.TOMBSTONE_BRICK_WALL.get());
         tag(BlockTags.WOODEN_FENCES).add(ModBlocks.MOROSE_FENCE.get());
+        tag(BlockTags.WOODEN_FENCES).add(ModBlocks.CASKET_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.MOROSE_FENCE_GATE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.CASKET_FENCE_GATE.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.MOROSE_BRANCH.get())
                 .add(ModBlocks.STRIPPED_MOROSE_BRANCH.get())
                 .add(ModBlocks.MOROSE_WOOD.get())
-                .add(ModBlocks.STRIPPED_MOROSE_WOOD.get());
+                .add(ModBlocks.STRIPPED_MOROSE_WOOD.get())
+                .add(ModBlocks.CASKET_LOG.get())
+                .add(ModBlocks.STRIPPED_CASKET_LOG.get())
+                .add(ModBlocks.CASKET_WOOD.get())
+                .add(ModBlocks.STRIPPED_CASKET_WOOD.get());
     }
 }

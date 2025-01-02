@@ -43,6 +43,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.MOROSE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.MOROSE_DOOR.get()));
+        add(ModBlocks.CASKET_DOOR.get(),
+                block -> createDoorTable(ModBlocks.CASKET_DOOR.get()));
 
         add(ModBlocks.TOMBSTONE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.TOMBSTONE_SLAB.get()));
@@ -55,6 +57,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.MOROSE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.MOROSE_SLAB.get()));
+        add(ModBlocks.CASKET_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CASKET_SLAB.get()));
 
         dropSelf(ModBlocks.MOROSE_STAIRS.get());
         dropSelf(ModBlocks.MOROSE_PLANKS.get());
@@ -67,8 +71,20 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.MOROSE_BUTTON.get());
         dropSelf(ModBlocks.MOROSE_FENCE.get());
         dropSelf(ModBlocks.MOROSE_FENCE_GATE.get());
-
         dropSelf(ModBlocks.MOROSE_BUD.get());
+
+        dropSelf(ModBlocks.CASKET_STAIRS.get());
+        dropSelf(ModBlocks.CASKET_PLANKS.get());
+        dropSelf(ModBlocks.CASKET_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_CASKET_WOOD.get());
+        dropSelf(ModBlocks.CASKET_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_CASKET_LOG.get());
+        dropSelf(ModBlocks.CASKET_TRAPDOOR.get());
+        dropSelf(ModBlocks.CASKET_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.CASKET_BUTTON.get());
+        dropSelf(ModBlocks.CASKET_FENCE.get());
+        dropSelf(ModBlocks.CASKET_FENCE_GATE.get());
+        dropSelf(ModBlocks.CASKET_SAPLING.get());
 
         this.add(ModBlocks.MOROSE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.MOROSE_BUD.get(),NORMAL_LEAVES_SAPLING_CHANCES));

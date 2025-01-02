@@ -122,6 +122,20 @@ public class Elementalis {
             event.accept(ModBlocks.MOROSE_PRESSURE_PLATE);
             event.accept(ModBlocks.MOROSE_BUTTON);
 
+            event.accept(ModBlocks.CASKET_LOG);
+            event.accept(ModBlocks.CASKET_WOOD);
+            event.accept(ModBlocks.STRIPPED_CASKET_LOG);
+            event.accept(ModBlocks.STRIPPED_CASKET_WOOD);
+            event.accept(ModBlocks.CASKET_PLANKS);
+            event.accept(ModBlocks.CASKET_STAIRS);
+            event.accept(ModBlocks.CASKET_SLAB);
+            event.accept(ModBlocks.CASKET_FENCE);
+            event.accept(ModBlocks.CASKET_FENCE_GATE);
+            event.accept(ModBlocks.CASKET_DOOR);
+            event.accept(ModBlocks.CASKET_TRAPDOOR);
+            event.accept(ModBlocks.CASKET_PRESSURE_PLATE);
+            event.accept(ModBlocks.CASKET_BUTTON);
+
             event.accept(ModBlocks.BLACK_IRON_DOOR);
             event.accept(ModBlocks.BLACK_IRON_TRAPDOOR);
             event.accept(ModBlocks.BLACK_IRON_BARS);

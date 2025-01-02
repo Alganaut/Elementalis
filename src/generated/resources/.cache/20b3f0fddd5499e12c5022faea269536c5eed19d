@@ -1,10 +1,14 @@
-// 1.21.1	2024-12-31T15:54:28.1870917	Item Models: elementalis
+// 1.21.1	2025-01-02T15:10:59.3249916	Item Models: elementalis
 667af942a8c3530a8f4111e3c4497978a912f011 assets/elementalis/models/item/6_music_disc.json
 58c6bceafa9437148ca4454b84c0ef25caf14e00 assets/elementalis/models/item/black_iron_bars.json
 cec2d29998c6e9c3f24ad628c6348daae8bd77db assets/elementalis/models/item/black_iron_door.json
 889e53f3a62ed8517be137c715110a75b83d11f4 assets/elementalis/models/item/blight_powder.json
 a16c9ea90f4f3747f20257ac038a908b82abd848 assets/elementalis/models/item/blight_rod.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/elementalis/models/item/blight_spawn_egg.json
+912b1ebe050ac9a44ec712b9c9b92de32916a85a assets/elementalis/models/item/casket_button.json
+2f9418af55e1c641cca928b5aab93b742eade43e assets/elementalis/models/item/casket_door.json
+50976c76e6f729c26a6274355b271883441ebe1d assets/elementalis/models/item/casket_fence.json
+1360625e314f78e2f3f9bed52efd90185e601782 assets/elementalis/models/item/casket_sapling.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/elementalis/models/item/dirtman_spawn_egg.json
 3ca6d86b05a796ceef0b79075f41449b0c067f57 assets/elementalis/models/item/morose_bud.json
 cd7f1de1513ddcbda422aac3420bd036225cafc6 assets/elementalis/models/item/morose_button.json

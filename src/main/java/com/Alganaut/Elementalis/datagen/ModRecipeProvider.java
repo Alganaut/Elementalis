@@ -108,37 +108,71 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stairBuilder(ModBlocks.MOROSE_STAIRS.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS)).group("morose_planks")
                 .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS)).save(recipeOutput);
 
+        stairBuilder(ModBlocks.CASKET_STAIRS.get(), Ingredient.of(ModBlocks.CASKET_PLANKS)).group("morose_planks")
+                .unlockedBy("has_casket_planks", has(ModBlocks.CASKET_PLANKS)).save(recipeOutput);
+
         doorBuilder(ModBlocks.MOROSE_DOOR.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS)).group("morose_planks")
                 .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS)).save(recipeOutput);
 
+        doorBuilder(ModBlocks.CASKET_DOOR.get(), Ingredient.of(ModBlocks.CASKET_PLANKS)).group("morose_planks")
+                .unlockedBy("has_casket_planks", has(ModBlocks.CASKET_PLANKS)).save(recipeOutput);
+
         trapdoorBuilder(ModBlocks.MOROSE_TRAPDOOR.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS)).group("morose_planks")
                 .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS)).save(recipeOutput);
+
+        trapdoorBuilder(ModBlocks.CASKET_TRAPDOOR.get(), Ingredient.of(ModBlocks.CASKET_PLANKS)).group("casket_planks")
+                .unlockedBy("has_casket_planks", has(ModBlocks.CASKET_PLANKS)).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOROSE_PLANKS.get(), 4)
                 .requires(ModBlocks.MOROSE_BRANCH)
                 .unlockedBy("has_morose_branch", has(ModBlocks.MOROSE_BRANCH)).save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CASKET_PLANKS.get(), 4)
+                .requires(ModBlocks.CASKET_LOG)
+                .unlockedBy("has_casket_log", has(ModBlocks.CASKET_LOG)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOROSE_PLANKS.get(), 3)
                 .requires(ModBlocks.MOROSE_WOOD)
                 .unlockedBy("has_morose_branch", has(ModBlocks.MOROSE_BRANCH)).save(recipeOutput, "elementalis:morose_planks_2");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CASKET_PLANKS.get(), 3)
+                .requires(ModBlocks.CASKET_WOOD)
+                .unlockedBy("has_casket_log", has(ModBlocks.CASKET_LOG)).save(recipeOutput, "elementalis:casket_planks_2");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOROSE_PLANKS.get(), 4)
                 .requires(ModBlocks.STRIPPED_MOROSE_BRANCH)
                 .unlockedBy("has_morose_branch", has(ModBlocks.MOROSE_BRANCH)).save(recipeOutput, "elementalis:morose_planks_3");
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CASKET_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_CASKET_LOG)
+                .unlockedBy("has_casket_log", has(ModBlocks.CASKET_LOG)).save(recipeOutput, "elementalis:casket_planks_3");
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOROSE_PLANKS.get(), 3)
                 .requires(ModBlocks.STRIPPED_MOROSE_WOOD)
                 .unlockedBy("has_morose_branch", has(ModBlocks.MOROSE_BRANCH)).save(recipeOutput, "elementalis:morose_planks_4");
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CASKET_PLANKS.get(), 3)
+                .requires(ModBlocks.STRIPPED_CASKET_WOOD)
+                .unlockedBy("has_casket_log", has(ModBlocks.CASKET_LOG)).save(recipeOutput, "elementalis:casket_planks_4");
+
         pressurePlate(recipeOutput, ModBlocks.MOROSE_PRESSURE_PLATE.get(), ModBlocks.MOROSE_PLANKS.get());
+        pressurePlate(recipeOutput, ModBlocks.CASKET_PRESSURE_PLATE.get(), ModBlocks.CASKET_PLANKS.get());
 
         buttonBuilder(ModBlocks.MOROSE_BUTTON.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS.get())).group("morose_planks")
                 .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS.get())).save(recipeOutput);
 
+        buttonBuilder(ModBlocks.CASKET_BUTTON.get(), Ingredient.of(ModBlocks.CASKET_PLANKS.get())).group("casket_planks")
+                .unlockedBy("has_casket_planks", has(ModBlocks.CASKET_PLANKS.get())).save(recipeOutput);
+
         fenceBuilder(ModBlocks.MOROSE_FENCE.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS.get())).group("morose_planks")
                 .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS.get())).save(recipeOutput);
+        fenceBuilder(ModBlocks.CASKET_FENCE.get(), Ingredient.of(ModBlocks.CASKET_PLANKS.get())).group("morose_planks")
+                .unlockedBy("has_casket_planks", has(ModBlocks.CASKET_PLANKS.get())).save(recipeOutput);
+
         fenceGateBuilder(ModBlocks.MOROSE_FENCE_GATE.get(), Ingredient.of(ModBlocks.MOROSE_PLANKS.get())).group("morose_planks")
                 .unlockedBy("has_morose_planks", has(ModBlocks.MOROSE_PLANKS.get())).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.CASKET_FENCE_GATE.get(), Ingredient.of(ModBlocks.CASKET_PLANKS.get())).group("casket_planks")
+                .unlockedBy("has_casket_planks", has(ModBlocks.CASKET_PLANKS.get())).save(recipeOutput);
 
     }
 

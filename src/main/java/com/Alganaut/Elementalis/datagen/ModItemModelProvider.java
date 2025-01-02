@@ -31,8 +31,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModBlocks.BLACK_IRON_DOOR.asItem());
         basicItem(ModBlocks.MOROSE_DOOR.asItem());
+        basicItem(ModBlocks.CASKET_DOOR.asItem());
 
         saplingItem(ModBlocks.MOROSE_BUD);
+        saplingItem(ModBlocks.CASKET_SAPLING);
 
         this.getBuilder(ModBlocks.BLACK_IRON_BARS.getId().toString())
                 .parent(new ModelFile.UncheckedModelFile("item/generated"))
@@ -40,8 +42,10 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .renderType("translucent");
 
         buttonItem(ModBlocks.MOROSE_BUTTON, ModBlocks.MOROSE_PLANKS);
+        buttonItem(ModBlocks.CASKET_BUTTON, ModBlocks.CASKET_PLANKS);
 
         fenceItem(ModBlocks.MOROSE_FENCE, ModBlocks.MOROSE_PLANKS);
+        fenceItem(ModBlocks.CASKET_FENCE, ModBlocks.CASKET_PLANKS);
 
         withExistingParent(ModItems.DIRTMAN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.BLIGHT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));

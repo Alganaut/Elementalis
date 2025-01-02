@@ -15,6 +15,10 @@
     "elementalis:polished_tombstone_wall",
     "elementalis:tombstone_brick_stairs",
     "elementalis:tombstone_brick_slab",
-    "elementalis:tombstone_brick_wall"
+    "elementalis:tombstone_brick_wall",
+    "elementalis:tombstone_brick_wall",
+    "elementalis:black_iron_door",
+    "elementalis:black_iron_trapdoor",
+    "elementalis:black_iron_bars"
   ]
 }

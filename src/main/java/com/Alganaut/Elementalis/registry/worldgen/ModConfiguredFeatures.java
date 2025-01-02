@@ -30,6 +30,8 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOROSE_KEY = registerKey("morose");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CASKET_KEY = registerKey("casket");
+
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
 
@@ -37,6 +39,25 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.MOROSE_BRANCH.get()),
                 new CherryTrunkPlacer(
                         0, 1, 0,
+                        new WeightedListInt(
+                                SimpleWeightedRandomList.<IntProvider>builder().add(ConstantInt.of(1), 1).add(ConstantInt.of(3), 2).add(ConstantInt.of(1), 2).build()
+                        ),
+                        UniformInt.of(2, 2),
+                        UniformInt.of(-3, -2),
+                        UniformInt.of(-1, 0)
+                ),
+                new WeightedStateProvider(
+                        SimpleWeightedRandomList.<BlockState>builder()
+                                .add(ModBlocks.MOROSE_LEAVES.get().defaultBlockState(), 2)
+                                .add(ModBlocks.BUDDING_MOROSE_LEAVES.get().defaultBlockState(), 1)
+                ),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(3, 1, 2)).build());
+
+        register(context, CASKET_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CASKET_LOG.get()),
+                new CherryTrunkPlacer(
+                        7, 9, 8,
                         new WeightedListInt(
                                 SimpleWeightedRandomList.<IntProvider>builder().add(ConstantInt.of(1), 1).add(ConstantInt.of(3), 2).add(ConstantInt.of(1), 2).build()
                         ),

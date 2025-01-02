@@ -90,13 +90,43 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STRIPPED_MOROSE_WOOD = registerBlock("stripped_morose_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
 
+    public static final DeferredBlock<Block> CASKET_LOG = registerBlock("casket_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> CASKET_WOOD = registerBlock("casket_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> STRIPPED_CASKET_LOG = registerBlock("stripped_casket_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+    public static final DeferredBlock<Block> STRIPPED_CASKET_WOOD = registerBlock("stripped_casket_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+
     public static final DeferredBlock<Block> TOMBSTONE_PILLAR = registerBlock("tombstone_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR)));
 
     public static final DeferredBlock<PressurePlateBlock> MOROSE_PRESSURE_PLATE = registerBlock("morose_pressure_plate",
-            () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f).requiresCorrectToolForDrops()));
+            () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f)));
+
+    public static final DeferredBlock<PressurePlateBlock> CASKET_PRESSURE_PLATE = registerBlock("casket_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f)));
 
     public static final DeferredBlock<Block> MOROSE_PLANKS = registerBlock("morose_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final DeferredBlock<Block> CASKET_PLANKS = registerBlock("casket_planks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -153,20 +183,39 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MOROSE_BUD = registerBlock("morose_bud",
             () -> new SaplingBlock(ModTreeGrowers.MOROSE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
+    public static final DeferredBlock<Block> CASKET_SAPLING = registerBlock("casket_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.CASKET, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+
     public static final DeferredBlock<StairBlock> MOROSE_STAIRS = registerBlock("morose_stairs",
             () -> new StairBlock(ModBlocks.MOROSE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(0.5f)));
+
+    public static final DeferredBlock<StairBlock> CASKET_STAIRS = registerBlock("casket_stairs",
+            () -> new StairBlock(ModBlocks.CASKET_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(0.5f)));
 
     public static final DeferredBlock<SlabBlock> MOROSE_SLAB = registerBlock("morose_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(0.5f)));
 
+    public static final DeferredBlock<SlabBlock> CASKET_SLAB = registerBlock("casket_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(0.5f)));
+
     public static final DeferredBlock<ButtonBlock> MOROSE_BUTTON = registerBlock("morose_button",
-            () -> new ButtonBlock(BlockSetType.OAK, 20, BlockBehaviour.Properties.of().strength(1f).noCollission()));
+            () -> new ButtonBlock(BlockSetType.OAK, 20, BlockBehaviour.Properties.of().strength(0.5f).noCollission()));
+
+    public static final DeferredBlock<ButtonBlock> CASKET_BUTTON = registerBlock("casket_button",
+            () -> new ButtonBlock(BlockSetType.OAK, 20, BlockBehaviour.Properties.of().strength(0.5f).noCollission()));
 
     public static final DeferredBlock<FenceBlock> MOROSE_FENCE = registerBlock("morose_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of().strength(0.5f)));
 
+    public static final DeferredBlock<FenceBlock> CASKET_FENCE = registerBlock("casket_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(0.5f)));
+
     public static final DeferredBlock<FenceGateBlock> MOROSE_FENCE_GATE = registerBlock("morose_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(0.5f)));
+
+    public static final DeferredBlock<FenceGateBlock> CASKET_FENCE_GATE = registerBlock("casket_fence_gate",
             () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(0.5f)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
@@ -178,6 +227,11 @@ public class ModBlocks {
     public static final DeferredBlock<DoorBlock> MOROSE_DOOR = registerBlock("morose_door",
             () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f).noOcclusion()));
     public static final DeferredBlock<TrapDoorBlock> MOROSE_TRAPDOOR = registerBlock("morose_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f).noOcclusion()));
+
+    public static final DeferredBlock<DoorBlock> CASKET_DOOR = registerBlock("casket_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f).noOcclusion()));
+    public static final DeferredBlock<TrapDoorBlock> CASKET_TRAPDOOR = registerBlock("casket_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f).noOcclusion()));
 
 private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {

@@ -29,10 +29,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.MOROSE_BRANCH.get().asItem())
                 .add(ModBlocks.STRIPPED_MOROSE_BRANCH.get().asItem())
                 .add(ModBlocks.MOROSE_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_MOROSE_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_MOROSE_WOOD.get().asItem())
+                .add(ModBlocks.CASKET_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_CASKET_LOG.get().asItem())
+                .add(ModBlocks.CASKET_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_CASKET_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.MOROSE_PLANKS.asItem());
+                .add(ModBlocks.MOROSE_PLANKS.asItem())
+                .add(ModBlocks.CASKET_PLANKS.asItem());
 
         this.tag(ItemTags.DIRT)
                 .add(ModBlocks.TOMBSOIL.asItem());

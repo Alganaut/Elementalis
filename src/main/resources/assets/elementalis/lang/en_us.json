@@ -51,6 +51,21 @@
   "block.elementalis.morose_fence": "Morose Fence",
   "block.elementalis.morose_fence_gate": "Morose Fence Gate",
 
+  "block.elementalis.casket_log": "Casket Log",
+  "block.elementalis.casket_wood": "Casket Wood",
+  "block.elementalis.stripped_casket_wood": "Stripped Casket Wood",
+  "block.elementalis.stripped_casket_log": "Stripped Casket Log",
+  "block.elementalis.casket_planks": "Casket Planks",
+  "block.elementalis.casket_sapling": "Casket Sapling",
+  "block.elementalis.casket_door": "Casket Door",
+  "block.elementalis.casket_trapdoor": "Casket Trapdoor",
+  "block.elementalis.casket_slab": "Casket Slab",
+  "block.elementalis.casket_stairs": "Casket Stairs",
+  "block.elementalis.casket_pressure_plate": "Casket Pressure Plate",
+  "block.elementalis.casket_button": "Casket Button",
+  "block.elementalis.casket_fence": "Casket Fence",
+  "block.elementalis.casket_fence_gate": "Casket Fence Gate",
+
 "creativetab.elementalis.elementalis": "Elementalis",
 
   "trim_pattern.elementalis.perish": "Perish Armor Trim",
