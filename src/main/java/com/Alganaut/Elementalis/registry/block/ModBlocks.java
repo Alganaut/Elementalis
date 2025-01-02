@@ -162,6 +162,24 @@ public class ModBlocks {
                 }
             });
 
+    public static final DeferredBlock<Block> CASKET_LEAVES = registerBlock("casket_leaves",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
     public static final DeferredBlock<Block> BUDDING_MOROSE_LEAVES = registerBlock("budding_morose_leaves",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
                 @Override

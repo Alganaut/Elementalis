@@ -69,6 +69,7 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
                     output.accept(ModBlocks.MOROSE_LEAVES);
                     output.accept(ModBlocks.BUDDING_MOROSE_LEAVES);
 
+                    output.accept(ModBlocks.CASKET_SAPLING);
                     output.accept(ModBlocks.CASKET_LOG);
                     output.accept(ModBlocks.CASKET_WOOD);
                     output.accept(ModBlocks.STRIPPED_CASKET_LOG);
@@ -82,6 +83,7 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
                     output.accept(ModBlocks.CASKET_TRAPDOOR);
                     output.accept(ModBlocks.CASKET_PRESSURE_PLATE);
                     output.accept(ModBlocks.CASKET_BUTTON);
+                    output.accept(ModBlocks.CASKET_LEAVES);
 
                     output.accept(ModItems.BLIGHT_SPAWN_EGG);
                     output.accept(ModItems.DIRTMAN_SPAWN_EGG);

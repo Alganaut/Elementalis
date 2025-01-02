@@ -84,10 +84,13 @@ public class Elementalis {
         }
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.TOMBSOIL);
             event.accept(ModBlocks.TOMBSTONE);
             event.accept(ModBlocks.MOROSE_BUD);
             event.accept(ModBlocks.MOROSE_LEAVES);
             event.accept(ModBlocks.BUDDING_MOROSE_LEAVES);
+            event.accept(ModBlocks.CASKET_SAPLING);
+            event.accept(ModBlocks.CASKET_LEAVES);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

@@ -85,6 +85,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.TOMBSTONE_PILLAR);
 
         leavesBlock(ModBlocks.MOROSE_LEAVES);
+        leavesBlock(ModBlocks.CASKET_LEAVES);
         leavesBlock(ModBlocks.BUDDING_MOROSE_LEAVES);
         saplingBlock(ModBlocks.MOROSE_BUD);
         saplingBlock(ModBlocks.CASKET_SAPLING);

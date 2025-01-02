@@ -44,6 +44,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         this.tag(ItemTags.LEAVES)
                 .add(ModBlocks.MOROSE_LEAVES.asItem())
+                .add(ModBlocks.CASKET_LEAVES.asItem())
                 .add(ModBlocks.BUDDING_MOROSE_LEAVES.asItem());
 
         this.tag(ItemTags.STONE_CRAFTING_MATERIALS)

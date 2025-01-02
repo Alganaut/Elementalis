@@ -23,6 +23,7 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 
 public class ModConfiguredFeatures {
@@ -56,22 +57,12 @@ public class ModConfiguredFeatures {
 
         register(context, CASKET_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CASKET_LOG.get()),
-                new CherryTrunkPlacer(
-                        7, 9, 8,
-                        new WeightedListInt(
-                                SimpleWeightedRandomList.<IntProvider>builder().add(ConstantInt.of(1), 1).add(ConstantInt.of(3), 2).add(ConstantInt.of(1), 2).build()
-                        ),
-                        UniformInt.of(2, 2),
-                        UniformInt.of(-3, -2),
-                        UniformInt.of(-1, 0)
-                ),
-                new WeightedStateProvider(
-                        SimpleWeightedRandomList.<BlockState>builder()
-                                .add(ModBlocks.MOROSE_LEAVES.get().defaultBlockState(), 2)
-                                .add(ModBlocks.BUDDING_MOROSE_LEAVES.get().defaultBlockState(), 1)
-                ),
-                new RandomSpreadFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(2), 50),
-                new TwoLayersFeatureSize(3, 1, 2)).build());
+                new FancyTrunkPlacer(7, 9, 8),
+
+                BlockStateProvider.simple(ModBlocks.CASKET_LEAVES.get()),
+                new CherryFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(7), 0.65F, 0.75F, 0.9F, 1F),
+
+                new TwoLayersFeatureSize(5, 2, 4)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

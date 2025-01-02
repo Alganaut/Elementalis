@@ -92,6 +92,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.BUDDING_MOROSE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.MOROSE_BUD.get(),NORMAL_LEAVES_SAPLING_CHANCES));
 
+        this.add(ModBlocks.CASKET_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.CASKET_SAPLING.get(),NORMAL_LEAVES_SAPLING_CHANCES));
+
     }
 
     @Override
