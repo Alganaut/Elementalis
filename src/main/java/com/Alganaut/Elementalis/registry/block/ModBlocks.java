@@ -25,14 +25,17 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Elementalis.MODID);
 
+    public static final DeferredBlock<Block> TOMBSOIL = registerBlock("tombsoil",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5f).sound(SoundType.GRAVEL)));
+
+    public static final DeferredBlock<Block> TOMBSOIL_GRASS = registerBlock("tombsoil_grass",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5f).sound(SoundType.GRAVEL)));
+
     public static final DeferredBlock<Block> TOMBSTONE = registerBlock("tombstone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
-
-    public static final DeferredBlock<Block> TOMBSOIL = registerBlock("tombsoil",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT)
-                    .strength(0.5f).sound(SoundType.GRAVEL)));
-
     public static final DeferredBlock<Block> POLISHED_TOMBSTONE = registerBlock("polished_tombstone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.POLISHED_DEEPSLATE)));

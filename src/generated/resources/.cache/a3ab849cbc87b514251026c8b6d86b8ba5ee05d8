@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-02T15:10:59.3180084	Block States: elementalis
+// 1.21.1	2025-01-02T20:15:55.6934183	Block States: elementalis
 d18143ecad349f57f6a17c8afb14fc564aff25d0 assets/elementalis/blockstates/black_iron_bars.json
 b7fa8f8de7b6e528c83d4fdff76583e0b8e4b581 assets/elementalis/blockstates/black_iron_door.json
 796b8c57e6ccd2b8a9c6a4154b1e4469c4432238 assets/elementalis/blockstates/black_iron_trapdoor.json
@@ -8,6 +8,7 @@ dfe2858fdb6f0921702a59cbf886805d93af1135 assets/elementalis/blockstates/casket_b
 e5d075cb3d0bb86960390c46ebb1f8cd22f03793 assets/elementalis/blockstates/casket_door.json
 2b801664060a0b54712e1906ee93e3e2f64e8c1e assets/elementalis/blockstates/casket_fence.json
 47fa4f56023a3d8251814b5657e051ce97424911 assets/elementalis/blockstates/casket_fence_gate.json
+1999df1202a54123acd6f0b7f78482c0149c4c3d assets/elementalis/blockstates/casket_leaves.json
 551caba76dafbe83cf5c9c7143e89297045e1d39 assets/elementalis/blockstates/casket_log.json
 103f11336bc493dafa753650ac353c8aa4de931f assets/elementalis/blockstates/casket_planks.json
 09fa7f11289d55390e4e66c7c901f54016dbc97d assets/elementalis/blockstates/casket_pressure_plate.json
@@ -83,6 +84,7 @@ c4cfdb3eef3f62d7dea08f763f6935f1795b49f1 assets/elementalis/models/block/casket_
 4a94ca9f963fa8e289266fd9e27432d6b765c988 assets/elementalis/models/block/casket_fence_gate_wall_open.json
 3c271a32d3912d363ee505df8e583aba8b65196f assets/elementalis/models/block/casket_fence_post.json
 b820dc19283f2d0b564243ff5223dad8375843cb assets/elementalis/models/block/casket_fence_side.json
+d5ea14438a674138c050c3711dc5febb754db304 assets/elementalis/models/block/casket_leaves.json
 c2e7d6b3b289d63e6b91b65788accab520694a3f assets/elementalis/models/block/casket_log.json
 af0779550a0345fc393555bb4bd2f48c9c1a3e8a assets/elementalis/models/block/casket_log_horizontal.json
 75c6f7d0efbfa816d6c6870be474a06a742005fd assets/elementalis/models/block/casket_planks.json
@@ -176,6 +178,7 @@ a44b21573b26df64ac4f6c650ec899b6ceb27447 assets/elementalis/models/item/black_ir
 400ed54b1c5904e2faa09bb45b299548a88c8a60 assets/elementalis/models/item/blooming_tombstone_bricks.json
 ba5976ece457d21fd1bb3268c7079043ec412557 assets/elementalis/models/item/budding_morose_leaves.json
 7862d2d7efa9f50f6c23d8e711891ff4c59cebdf assets/elementalis/models/item/casket_fence_gate.json
+7963e7d5e5fd320a2be779f60391c5e83df1f6d1 assets/elementalis/models/item/casket_leaves.json
 ed67f730736ac7dc66e72bc1fe61ca18f4bfaec6 assets/elementalis/models/item/casket_log.json
 6d39ad6e912e6e47f322500c5ca9621066507152 assets/elementalis/models/item/casket_planks.json
 e2993ed3beea3657f5ced9e3304fe44758ae57fa assets/elementalis/models/item/casket_pressure_plate.json

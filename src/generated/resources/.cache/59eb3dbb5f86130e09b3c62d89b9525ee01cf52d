@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-02T15:10:59.3219985	Loot Tables
+// 1.21.1	2025-01-02T20:43:26.6658427	Loot Tables
 b294d547802d4ef5091d98ec90bfa68c3a5f86da data/elementalis/loot_table/blocks/black_iron_bars.json
 26b13b1263417bbb1aeab78af2b29e58b7d38d0d data/elementalis/loot_table/blocks/black_iron_door.json
 16e617f421a8ee6c81cd9b787eda757590c6f4b9 data/elementalis/loot_table/blocks/black_iron_trapdoor.json
@@ -8,6 +8,7 @@ b294d547802d4ef5091d98ec90bfa68c3a5f86da data/elementalis/loot_table/blocks/blac
 28262c8c743f6015a05894f4ab7cee3751d2e7f8 data/elementalis/loot_table/blocks/casket_door.json
 5d437ecc820fe59ee3a3618678ad9cf42b66f92e data/elementalis/loot_table/blocks/casket_fence.json
 ff3604d3d7b61ee6e436dc573e597d1ca866ab4a data/elementalis/loot_table/blocks/casket_fence_gate.json
+ee83c3a65f0c98d28ae683b0e40b1ac296639397 data/elementalis/loot_table/blocks/casket_leaves.json
 9b933195e1bb4790a57dea49b5d00aae504b7f76 data/elementalis/loot_table/blocks/casket_log.json
 046ae1546dd5eaa33d05594c31d67e46083c7d45 data/elementalis/loot_table/blocks/casket_planks.json
 938504f578f8893f56584c9678a5c9d4c891d2b0 data/elementalis/loot_table/blocks/casket_pressure_plate.json
@@ -40,6 +41,7 @@ dc4c6498087c9c93bfd281726bfbf685cd2d3683 data/elementalis/loot_table/blocks/stri
 caf54ab773dd77a29993fcc9459ae02527e4e5c6 data/elementalis/loot_table/blocks/stripped_morose_branch.json
 f737395b7501f2326d5f8a5f425e4815a7ba845e data/elementalis/loot_table/blocks/stripped_morose_wood.json
 63c9d69e25c10e6aa82e21aaaf7c3f602e5dde02 data/elementalis/loot_table/blocks/tombsoil.json
+011927c09bf499a492e2a114e252fac995bd3326 data/elementalis/loot_table/blocks/tombsoil_grass.json
 c2cca8b1bfb538422462802b0708487009d44772 data/elementalis/loot_table/blocks/tombstone.json
 b68898fba49a7302ac4d5431dcb77424c6dd3287 data/elementalis/loot_table/blocks/tombstone_bricks.json
 48f35d039952e08d0a06282d0f704753a191bb68 data/elementalis/loot_table/blocks/tombstone_brick_slab.json

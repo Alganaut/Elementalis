@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "elementalis:block/tombsoil_grass"
+      },
+      {
+        "model": "elementalis:block/tombsoil_grass",
+        "y": 90
+      },
+      {
+        "model": "elementalis:block/tombsoil_grass",
+        "y": 180
+      },
+      {
+        "model": "elementalis:block/tombsoil_grass",
+        "y": 270
+      }
+    ]
+    }
+  }

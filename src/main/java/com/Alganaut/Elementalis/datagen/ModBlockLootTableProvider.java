@@ -18,6 +18,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.TOMBSTONE.get());
         dropSelf(ModBlocks.TOMBSOIL.get());
+        dropSelf(ModBlocks.TOMBSOIL_GRASS.get());
         dropSelf(ModBlocks.POLISHED_TOMBSTONE.get());
         dropSelf(ModBlocks.TOMBSTONE_BRICKS.get());
         dropSelf(ModBlocks.BLOOMING_TOMBSTONE_BRICKS.get());

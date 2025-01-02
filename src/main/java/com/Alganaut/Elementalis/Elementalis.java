@@ -84,6 +84,7 @@ public class Elementalis {
         }
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.TOMBSOIL_GRASS);
             event.accept(ModBlocks.TOMBSOIL);
             event.accept(ModBlocks.TOMBSTONE);
             event.accept(ModBlocks.MOROSE_BUD);

@@ -27,6 +27,7 @@ public static final Supplier<CreativeModeTab> ELEMENTALIS_TAB = CREATIVE_MODE_TA
 
                     output.accept(ModItems.PERISH_SMITHING_TEMPLATE);
 
+                    output.accept(ModBlocks.TOMBSOIL_GRASS);
                     output.accept(ModBlocks.TOMBSOIL);
                     output.accept(ModBlocks.TOMBSTONE);
                     output.accept(ModBlocks.TOMBSTONE_STAIRS);
