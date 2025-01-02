@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -26,56 +27,56 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> TOMBSTONE = registerBlock("tombstone",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+                    .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> TOMBSOIL = registerBlock("tombsoil",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1f).sound(SoundType.GRAVEL)));
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT)
+                    .strength(0.5f).sound(SoundType.GRAVEL)));
 
     public static final DeferredBlock<Block> POLISHED_TOMBSTONE = registerBlock("polished_tombstone",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.POLISHED_DEEPSLATE)));
+                    .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.POLISHED_DEEPSLATE)));
     public static final DeferredBlock<Block> TOMBSTONE_BRICKS = registerBlock("tombstone_bricks",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
+                    .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
     public static final DeferredBlock<Block> BLOOMING_TOMBSTONE_BRICKS = registerBlock("blooming_tombstone_bricks",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
+                    .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
     public static final DeferredBlock<Block> CRACKED_TOMBSTONE_BRICKS = registerBlock("cracked_tombstone_bricks",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
+                    .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
     public static final DeferredBlock<Block> CHISELED_TOMBSTONE_BRICKS = registerBlock("chiseled_tombstone_bricks",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
+                    .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
 
     public static final DeferredBlock<StairBlock> TOMBSTONE_STAIRS = registerBlock("tombstone_stairs",
             () -> new StairBlock(ModBlocks.TOMBSTONE.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.5f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<StairBlock> POLISHED_TOMBSTONE_STAIRS = registerBlock("polished_tombstone_stairs",
             () -> new StairBlock(ModBlocks.POLISHED_TOMBSTONE.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.5f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<StairBlock> TOMBSTONE_BRICK_STAIRS = registerBlock("tombstone_brick_stairs",
             () -> new StairBlock(ModBlocks.TOMBSTONE_BRICKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.5f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<SlabBlock> TOMBSTONE_SLAB = registerBlock("tombstone_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.5f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> POLISHED_TOMBSTONE_SLAB = registerBlock("polished_tombstone_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.5f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> TOMBSTONE_BRICK_SLAB = registerBlock("tombstone_brick_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.5f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<WallBlock> TOMBSTONE_WALL = registerBlock("tombstone_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.5f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> POLISHED_TOMBSTONE_WALL = registerBlock("polished_tombstone_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.5f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> TOMBSTONE_BRICK_WALL = registerBlock("tombstone_brick_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.5f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<DoorBlock> BLACK_IRON_DOOR = registerBlock("black_iron_door",
-            () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+            () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(5.0f).requiresCorrectToolForDrops().noOcclusion()));
     public static final DeferredBlock<TrapDoorBlock> BLACK_IRON_TRAPDOOR = registerBlock("black_iron_trapdoor",
-            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(5.0f).requiresCorrectToolForDrops().noOcclusion()));
 
     public static final DeferredBlock<IronBarsBlock> BLACK_IRON_BARS = registerBlock("black_iron_bars",
             () -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BARS)));
@@ -93,7 +94,7 @@ public class ModBlocks {
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR)));
 
     public static final DeferredBlock<PressurePlateBlock> MOROSE_PRESSURE_PLATE = registerBlock("morose_pressure_plate",
-            () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(1f).requiresCorrectToolForDrops()));
+            () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> MOROSE_PLANKS = registerBlock("morose_planks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
@@ -154,19 +155,19 @@ public class ModBlocks {
 
     public static final DeferredBlock<StairBlock> MOROSE_STAIRS = registerBlock("morose_stairs",
             () -> new StairBlock(ModBlocks.MOROSE_PLANKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(1f)));
+                    BlockBehaviour.Properties.of().strength(0.5f)));
 
     public static final DeferredBlock<SlabBlock> MOROSE_SLAB = registerBlock("morose_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1f)));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(0.5f)));
 
     public static final DeferredBlock<ButtonBlock> MOROSE_BUTTON = registerBlock("morose_button",
             () -> new ButtonBlock(BlockSetType.OAK, 20, BlockBehaviour.Properties.of().strength(1f).noCollission()));
 
     public static final DeferredBlock<FenceBlock> MOROSE_FENCE = registerBlock("morose_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(1f)));
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(0.5f)));
 
     public static final DeferredBlock<FenceGateBlock> MOROSE_FENCE_GATE = registerBlock("morose_fence_gate",
-            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(1f)));
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(0.5f)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
@@ -175,9 +176,9 @@ public class ModBlocks {
     }
 
     public static final DeferredBlock<DoorBlock> MOROSE_DOOR = registerBlock("morose_door",
-            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(1f).noOcclusion()));
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f).noOcclusion()));
     public static final DeferredBlock<TrapDoorBlock> MOROSE_TRAPDOOR = registerBlock("morose_trapdoor",
-            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(1f).noOcclusion()));
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f).noOcclusion()));
 
 private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

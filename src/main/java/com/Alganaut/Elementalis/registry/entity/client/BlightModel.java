@@ -88,7 +88,6 @@ public class BlightModel<T extends Blight> extends HierarchicalModel<T> {
     public void setupAnim(Blight entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
         this.root().getAllParts().forEach(ModelPart::resetPose);
 
-        this.animateWalk(BlightAnimations.ANIM_BLIGHT_IDLE, limbSwing, limbSwingAmount, 2f, 2.5f);
         this.animate(entity.idleAnimationState, BlightAnimations.ANIM_BLIGHT_IDLE, ageInTicks, 1f);
     }
 
